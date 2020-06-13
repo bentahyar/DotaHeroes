@@ -15,4 +15,34 @@ class HeroDetailInteractor: HeroDetailInteractorInput {
     init(databaseManager: DatabaseManager) {
         self.databaseManager = databaseManager
     }
+
+    func getSimilarHeroes(withHero hero: HeroesData) {
+        var type = ""
+        switch hero.attr {
+        case "agi":
+            type = "speed"
+        case "str":
+            type = "attack"
+        case "int":
+            type = "mana"
+        default:
+            type = ""
+        }
+
+        let heroesPredicate = NSPredicate(format: "attr = %@", hero.attr)
+        let heroesSortDescriptor = NSSortDescriptor(key: type, ascending: false)
+        let heroes = self.databaseManager.fetch(ofType: HeroesData.self,
+                                                sortDescriptors: [heroesSortDescriptor],
+                                                withPredicate: heroesPredicate)
+
+        var similarHeroes: [HeroesData] = []
+
+        heroes.forEach { heroData in
+            if similarHeroes.count < 3, heroData.heroId != hero.heroId {
+                similarHeroes.append(heroData)
+            }
+        }
+
+        self.output?.showSimilarHeroes(heroes: similarHeroes)
+    }
 }

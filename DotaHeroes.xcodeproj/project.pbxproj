@@ -24,6 +24,10 @@
 		9F628B8E2494FCCC00590A21 /* HeroDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B8D2494FCCC00590A21 /* HeroDetailPresenter.swift */; };
 		9F628B902494FCE700590A21 /* HeroDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B8F2494FCE700590A21 /* HeroDetailWireframe.swift */; };
 		9F628B932494FF8C00590A21 /* RouterHeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B922494FF8C00590A21 /* RouterHeroDetail.swift */; };
+		9F628B952495034400590A21 /* MockHeroDetailOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B942495034400590A21 /* MockHeroDetailOutput.swift */; };
+		9F628B992495039500590A21 /* HeroDetailInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B982495039500590A21 /* HeroDetailInteractorTest.swift */; };
+		9F628B9B2495060A00590A21 /* SimilarHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F628B9A2495060A00590A21 /* SimilarHeroes.json */; };
+		9F628B9D2495103C00590A21 /* SimilarHeroes2.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F628B9C2495103C00590A21 /* SimilarHeroes2.json */; };
 		9F76AD4B2493502D009C4620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD4A2493502D009C4620 /* AppDelegate.swift */; };
 		9F76AD552493502D009C4620 /* DotaHeroes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD532493502D009C4620 /* DotaHeroes.xcdatamodeld */; };
 		9F76AD5724935031009C4620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F76AD5624935031009C4620 /* Assets.xcassets */; };
@@ -80,6 +84,10 @@
 		9F628B8D2494FCCC00590A21 /* HeroDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailPresenter.swift; sourceTree = "<group>"; };
 		9F628B8F2494FCE700590A21 /* HeroDetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailWireframe.swift; sourceTree = "<group>"; };
 		9F628B922494FF8C00590A21 /* RouterHeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterHeroDetail.swift; sourceTree = "<group>"; };
+		9F628B942495034400590A21 /* MockHeroDetailOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeroDetailOutput.swift; sourceTree = "<group>"; };
+		9F628B982495039500590A21 /* HeroDetailInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailInteractorTest.swift; sourceTree = "<group>"; };
+		9F628B9A2495060A00590A21 /* SimilarHeroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SimilarHeroes.json; sourceTree = "<group>"; };
+		9F628B9C2495103C00590A21 /* SimilarHeroes2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SimilarHeroes2.json; sourceTree = "<group>"; };
 		9F76AD472493502D009C4620 /* DotaHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F76AD4A2493502D009C4620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F76AD542493502D009C4620 /* DotaHeroes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DotaHeroes.xcdatamodel; sourceTree = "<group>"; };
@@ -299,6 +307,7 @@
 				9F76AD9424936A65009C4620 /* Mock */,
 				9F76AD9824936B21009C4620 /* DatabaseTest.swift */,
 				9FAAB6512494A5D30045BF41 /* MainInteractorTest.swift */,
+				9F628B982495039500590A21 /* HeroDetailInteractorTest.swift */,
 				9F76AD6624935032009C4620 /* Info.plist */,
 			);
 			path = DotaHeroesTests;
@@ -368,6 +377,8 @@
 			isa = PBXGroup;
 			children = (
 				9F76AD92249368C2009C4620 /* Heroes.json */,
+				9F628B9A2495060A00590A21 /* SimilarHeroes.json */,
+				9F628B9C2495103C00590A21 /* SimilarHeroes2.json */,
 			);
 			path = MockData;
 			sourceTree = "<group>";
@@ -418,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				9FAAB64D2494A5620045BF41 /* MockMainOutput.swift */,
+				9F628B942495034400590A21 /* MockHeroDetailOutput.swift */,
 			);
 			path = Output;
 			sourceTree = "<group>";
@@ -526,7 +538,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F628B9D2495103C00590A21 /* SimilarHeroes2.json in Resources */,
 				9F76AD5A24935031009C4620 /* LaunchScreen.storyboard in Resources */,
+				9F628B9B2495060A00590A21 /* SimilarHeroes.json in Resources */,
 				9F628B862494FC9000590A21 /* HeroDetailViewController.xib in Resources */,
 				9F628B752494C76500590A21 /* RolesCell.xib in Resources */,
 				9F76AD93249368C2009C4620 /* Heroes.json in Resources */,
@@ -669,7 +683,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FAAB64924949D6D0045BF41 /* MockHeroesService.swift in Sources */,
+				9F628B952495034400590A21 /* MockHeroDetailOutput.swift in Sources */,
 				9F76AD9724936A9C009C4620 /* MockPersistentContainer.swift in Sources */,
+				9F628B992495039500590A21 /* HeroDetailInteractorTest.swift in Sources */,
 				9F76AD9924936B21009C4620 /* DatabaseTest.swift in Sources */,
 				9FAAB6522494A5D30045BF41 /* MainInteractorTest.swift in Sources */,
 				9FAAB64E2494A5620045BF41 /* MockMainOutput.swift in Sources */,

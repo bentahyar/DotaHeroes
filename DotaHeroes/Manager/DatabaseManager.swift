@@ -50,9 +50,11 @@ class DatabaseManager: NSObject {
     }
 
     func fetch<T: Entity>(ofType: T.Type,
-                          sortDescriptors: [NSSortDescriptor]? = nil) -> [T] {
+                          sortDescriptors: [NSSortDescriptor]? = nil,
+                          withPredicate predicate: NSPredicate? = nil) -> [T] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: T.entityName())
         request.returnsObjectsAsFaults = false
+        request.predicate = predicate
         request.sortDescriptors = sortDescriptors
 
         var entities = [T]()

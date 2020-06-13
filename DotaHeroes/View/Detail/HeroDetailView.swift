@@ -9,5 +9,5 @@
 import Foundation
 
 protocol HeroDetailView: class {
-
+    func showSimilarHeroes(heroes: [HeroesData])
 }

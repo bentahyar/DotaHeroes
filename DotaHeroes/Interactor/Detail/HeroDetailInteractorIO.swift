@@ -9,9 +9,9 @@
 import Foundation
 
 protocol HeroDetailInteractorInput: class {
-
+    func getSimilarHeroes(withHero hero: HeroesData)
 }
 
 protocol HeroDetailInteractorOutput: class {
-
+    func showSimilarHeroes(heroes: [HeroesData])
 }

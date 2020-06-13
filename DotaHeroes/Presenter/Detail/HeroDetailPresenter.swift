@@ -21,4 +21,14 @@ class HeroDetailPresenter: HeroDetailEventHandler, HeroDetailInteractorOutput {
         self.router = router
         self.view = view
     }
+
+    // MARK: - EventHandler
+    func getSimilarHeroes(withHero hero: HeroesData) {
+        interactor.getSimilarHeroes(withHero: hero)
+    }
+
+    // MARK: - Output
+    func showSimilarHeroes(heroes: [HeroesData]) {
+        view?.showSimilarHeroes(heroes: heroes)
+    }
 }

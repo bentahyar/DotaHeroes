@@ -36,6 +36,11 @@ class HeroDetailViewController: UIViewController, HeroDetailView {
 
         navigationController?.interactivePopGestureRecognizer?.delegate = self
     }
+
+    // MARK: - View
+    func showSimilarHeroes(heroes: [HeroesData]) {
+
+    }
 }
 
 extension HeroDetailViewController: UIGestureRecognizerDelegate {

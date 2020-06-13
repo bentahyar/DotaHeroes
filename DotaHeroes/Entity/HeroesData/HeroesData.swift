@@ -19,6 +19,7 @@ enum HeroesDataKey: String, CodingKey {
     case image = "img"
     case health = "base_health"
     case attr = "primary_attr"
+    case mana = "base_mana"
 }
 
 extension CodingUserInfoKey {
@@ -35,6 +36,7 @@ class HeroesData: NSManagedObject, Entity, Codable {
     @NSManaged var health: Double
     @NSManaged var attr: String
     @NSManaged var image: String
+    @NSManaged var mana: Double
     @NSManaged var roles: [String]
 
     static func entityName() -> String {
@@ -53,6 +55,7 @@ class HeroesData: NSManagedObject, Entity, Codable {
         try container.encode(attr, forKey: .attr)
         try container.encode(image, forKey: .image)
         try container.encode(roles, forKey: .roles)
+        try container.encode(mana, forKey: .mana)
     }
 
     // MARK: - Decodable
@@ -74,6 +77,7 @@ class HeroesData: NSManagedObject, Entity, Codable {
             speed = try values.decode(Double.self, forKey: .speed)
             health = try values.decode(Double.self, forKey: .health)
             image = try values.decode(String.self, forKey: .image)
+            mana = try values.decode(Double.self, forKey: .mana)
             roles = try values.decode([String].self, forKey: .roles)
         } catch {
             debugPrint("Error")
