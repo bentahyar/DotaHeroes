@@ -19,12 +19,21 @@ class MainInteractor: MainInteractorInput {
     }
 
     func getHeroesAndRoles() {
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        let heroes = self.databaseManager.fetch(ofType: HeroesData.self, sortDescriptors: [sortDescriptor])
+        let roles = self.databaseManager.fetch(ofType: RolesData.self)
+        guard heroes.isEmpty == true, roles.isEmpty == true else {
+            self.output?.showHeroesAndRoles(heroes: heroes, roles: roles)
+            return
+        }
+
         service.heroes(onComplete: { data in
             guard let data = data else {
                 return
             }
             self.databaseManager.insert(data: data)
-            let heroes = self.databaseManager.fetch(ofType: HeroesData.self)
+            let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+            let heroes = self.databaseManager.fetch(ofType: HeroesData.self, sortDescriptors: [sortDescriptor])
             let roles = self.databaseManager.fetch(ofType: RolesData.self)
 
             self.output?.showHeroesAndRoles(heroes: heroes, roles: roles)

@@ -57,6 +57,29 @@ class MainInteractorTest: XCTestCase {
         XCTAssert(mockOutput?.invokedShowHeroesAndRolesParameters?.roles.count == 8, "Expected to have 8 items")
     }
     
+    func testGetHeroesAndRolesIfLocalExist() throws {
+        guard let file = Bundle.main.url(forResource: "Heroes", withExtension: "json") else {
+            XCTAssert(false, "Heroes.json is missing")
+            return
+        }
+        
+        let data = try Data(contentsOf: file)
+        mockService?.stubbedHeroesSuccess = data
+        mockCoreDataManager?.insert(data: data)
+        
+        interactor?.getHeroesAndRoles()
+        
+        XCTAssert(mockOutput?.invokedShowHeroesAndRoles == true, "Expected to be called")
+        XCTAssert(mockOutput?.invokedShowError == false, "Expected not to be called")
+        
+        let heroes = mockCoreDataManager?.fetch(ofType: HeroesData.self)
+        let roles = mockCoreDataManager?.fetch(ofType: RolesData.self)
+        XCTAssert(heroes?.count == 5, "Expected to have 5 data")
+        XCTAssert(roles?.count == 8, "Expected number of roles is 8")
+        
+        XCTAssert(mockService?.invokedHeroes == false, "Expected not to be called")
+    }
+    
     func testGetHeroesAndRolesWhenFailed() {
         let error = NSError()
         mockService?.stubbedHeroesError = error
