@@ -9,6 +9,12 @@
 import UIKit
 
 class MainViewController: UIViewController, MainView {
+    @IBOutlet weak var rolesCollectionView: UICollectionView!
+    @IBOutlet weak var heroesCollectionView: UICollectionView!
+
+    private var heroesAdapter: CollectionAdapter?
+    private var rolesAdapter: CollectionAdapter?
+
     var presenter: MainEventHandler?
 
     init() {
@@ -32,8 +38,8 @@ class MainViewController: UIViewController, MainView {
 
     // MARK: - View
     func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData]) {
-        debugPrint("Heroes: \(heroes)")
-        debugPrint("Roles: \(roles)")
+        heroesAdapter = CollectionAdapter(collectionView: heroesCollectionView, withData: heroes)
+        rolesAdapter = CollectionAdapter(collectionView: rolesCollectionView, withData: roles)
     }
 
     func showError() {

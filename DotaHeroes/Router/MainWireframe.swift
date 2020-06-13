@@ -16,6 +16,7 @@ class MainWireframe: Wireframe {
                                         databaseManager: databaseManager)
         let presenter = MainPresenter(interactor: interactor, router: self, view: view)
         let navigationController = UINavigationController(rootViewController: view)
+        navigationController.setNavigationBarHidden(true, animated: true)
 
         presenter.view = view
         view.presenter = presenter

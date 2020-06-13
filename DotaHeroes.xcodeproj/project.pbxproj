@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		79904F12632063F35B7C464A /* Pods_DotaHeroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A7337847739BF1A8D7CD6A /* Pods_DotaHeroes.framework */; };
 		9F628B692494B7EB00590A21 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B682494B7EB00590A21 /* Wireframe.swift */; };
+		9F628B6C2494C4EC00590A21 /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B6B2494C4EC00590A21 /* CollectionAdapter.swift */; };
+		9F628B702494C75100590A21 /* HeroesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B6E2494C75100590A21 /* HeroesCell.swift */; };
+		9F628B712494C75100590A21 /* HeroesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F628B6F2494C75100590A21 /* HeroesCell.xib */; };
+		9F628B742494C76500590A21 /* RolesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B722494C76500590A21 /* RolesCell.swift */; };
+		9F628B752494C76500590A21 /* RolesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F628B732494C76500590A21 /* RolesCell.xib */; };
+		9F628B782494CBF800590A21 /* CachedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B772494CBF800590A21 /* CachedImageView.swift */; };
 		9F76AD4B2493502D009C4620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD4A2493502D009C4620 /* AppDelegate.swift */; };
 		9F76AD552493502D009C4620 /* DotaHeroes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD532493502D009C4620 /* DotaHeroes.xcdatamodeld */; };
 		9F76AD5724935031009C4620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F76AD5624935031009C4620 /* Assets.xcassets */; };
@@ -50,6 +56,12 @@
 /* Begin PBXFileReference section */
 		9975A6834D77E0AC7BDBAF36 /* Pods-DotaHeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaHeroesTests.release.xcconfig"; path = "Target Support Files/Pods-DotaHeroesTests/Pods-DotaHeroesTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F628B682494B7EB00590A21 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		9F628B6B2494C4EC00590A21 /* CollectionAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
+		9F628B6E2494C75100590A21 /* HeroesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCell.swift; sourceTree = "<group>"; };
+		9F628B6F2494C75100590A21 /* HeroesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCell.xib; sourceTree = "<group>"; };
+		9F628B722494C76500590A21 /* RolesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesCell.swift; sourceTree = "<group>"; };
+		9F628B732494C76500590A21 /* RolesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RolesCell.xib; sourceTree = "<group>"; };
+		9F628B772494CBF800590A21 /* CachedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageView.swift; sourceTree = "<group>"; };
 		9F76AD472493502D009C4620 /* DotaHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F76AD4A2493502D009C4620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F76AD542493502D009C4620 /* DotaHeroes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DotaHeroes.xcdatamodel; sourceTree = "<group>"; };
@@ -115,6 +127,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F628B6A2494C4D700590A21 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				9F628B6B2494C4EC00590A21 /* CollectionAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		9F628B6D2494C73100590A21 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9F628B6E2494C75100590A21 /* HeroesCell.swift */,
+				9F628B6F2494C75100590A21 /* HeroesCell.xib */,
+				9F628B722494C76500590A21 /* RolesCell.swift */,
+				9F628B732494C76500590A21 /* RolesCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9F628B762494CBE200590A21 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9F628B772494CBF800590A21 /* CachedImageView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		9F76AD3E2493502D009C4620 = {
 			isa = PBXGroup;
 			children = (
@@ -140,8 +179,10 @@
 			children = (
 				9F76AD4A2493502D009C4620 /* AppDelegate.swift */,
 				9F76AD912493689D009C4620 /* MockData */,
+				9F628B6A2494C4D700590A21 /* Adapter */,
 				9F76AD8C24936782009C4620 /* Manager */,
 				9FAAB640249499850045BF41 /* Service */,
+				9F628B762494CBE200590A21 /* Utils */,
 				9F76AD732493586B009C4620 /* View */,
 				9F76AD7424935872009C4620 /* Interactor */,
 				9F76AD752493587C009C4620 /* Presenter */,
@@ -168,6 +209,7 @@
 		9F76AD732493586B009C4620 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F628B6D2494C73100590A21 /* Cell */,
 				9F76AD78249358A2009C4620 /* MainViewController.swift */,
 				9F76AD79249358A2009C4620 /* MainViewController.xib */,
 				9F76AD7C249358AC009C4620 /* MainView.swift */,
@@ -386,8 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F76AD5A24935031009C4620 /* LaunchScreen.storyboard in Resources */,
+				9F628B752494C76500590A21 /* RolesCell.xib in Resources */,
 				9F76AD93249368C2009C4620 /* Heroes.json in Resources */,
 				9F76AD7B249358A2009C4620 /* MainViewController.xib in Resources */,
+				9F628B712494C75100590A21 /* HeroesCell.xib in Resources */,
 				9F76AD5724935031009C4620 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +533,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F628B692494B7EB00590A21 /* Wireframe.swift in Sources */,
+				9F628B782494CBF800590A21 /* CachedImageView.swift in Sources */,
+				9F628B6C2494C4EC00590A21 /* CollectionAdapter.swift in Sources */,
 				9F76AD7A249358A2009C4620 /* MainViewController.swift in Sources */,
 				9F76AD83249358D5009C4620 /* MainEventHandler.swift in Sources */,
 				9F76AD8B2493677D009C4620 /* DatabaseManager.swift in Sources */,
@@ -496,6 +542,7 @@
 				9F76AD87249358E8009C4620 /* MainWireframe.swift in Sources */,
 				9FAAB63F249494E50045BF41 /* ServiceManager.swift in Sources */,
 				9F76AD9F24936D5D009C4620 /* HeroesData.swift in Sources */,
+				9F628B702494C75100590A21 /* HeroesCell.swift in Sources */,
 				9F76AD85249358DE009C4620 /* MainPresenter.swift in Sources */,
 				9FAAB6422494999C0045BF41 /* HeroesService.swift in Sources */,
 				9FAAB64424949AC40045BF41 /* ConstantsManager.swift in Sources */,
@@ -505,6 +552,7 @@
 				9FD27CD32493BE8A005CEB9B /* RolesData.swift in Sources */,
 				9F76AD4B2493502D009C4620 /* AppDelegate.swift in Sources */,
 				9F76AD81249358C3009C4620 /* MainInteractor.swift in Sources */,
+				9F628B742494C76500590A21 /* RolesCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
