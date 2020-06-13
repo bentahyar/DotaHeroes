@@ -32,15 +32,14 @@ class DotaHeroesTests: XCTestCase {
         }
         
         let data = try Data(contentsOf: file)
-        let decoder = JSONDecoder()
-        decoder.userInfo[CodingUserInfoKey.context!] = persistentContainer?.viewContext
+        mockCoreDataManager?.insert(data: data)
+
+        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        let heroes = mockCoreDataManager?.fetch(ofType: HeroesData.self, sortDescriptors: [sortDescriptor])
         
-        let heroes = try decoder.decode([HeroesData].self, from: data)
-        mockCoreDataManager?.saveContext()
+        XCTAssert(heroes?.count == 5, "Expected to have 5 data")
         
-        XCTAssert(heroes.count == 5, "Expected to have 5 data")
-        
-        guard let hero = heroes.first else {
+        guard let hero = heroes?.first else {
             XCTAssert(false, "First hero should not be nill")
             return
         }
@@ -64,17 +63,7 @@ class DotaHeroesTests: XCTestCase {
         }
         
         let data = try Data(contentsOf: file)
-        let decoder = JSONDecoder()
-        decoder.userInfo[CodingUserInfoKey.context!] = persistentContainer?.viewContext
-        
-        let heroes = try decoder.decode([HeroesData].self, from: data)
-        try heroes.forEach { hero in
-            try hero.roles.forEach { role in
-                let roleData = RolesData()
-                try roleData.createOrUpdate(withRole: role, context: persistentContainer!.viewContext)
-            }
-        }
-        mockCoreDataManager?.saveContext()
+        mockCoreDataManager?.insert(data: data)
         
         let roles = mockCoreDataManager?.fetch(ofType: RolesData.self)
         

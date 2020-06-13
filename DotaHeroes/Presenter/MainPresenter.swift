@@ -21,4 +21,18 @@ class MainPresenter: MainEventHandler, MainInteractorOutput {
         self.router = router
         self.view = view
     }
+
+    // MARK: - EventHandler
+    func getHeroesAndRoles() {
+        interactor.getHeroesAndRoles()
+    }
+
+    // MARK: - Output
+    func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData]) {
+        view?.showHeroesAndRoles(heroes: heroes, roles: roles)
+    }
+
+    func showError() {
+        view?.showError()
+    }
 }

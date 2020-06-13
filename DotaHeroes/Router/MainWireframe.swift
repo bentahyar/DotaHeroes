@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-class MainWireframe {
+class MainWireframe: Wireframe {
     var viewController: UIViewController {
         let view = MainViewController()
-        let interactor = MainInteractor()
+        let interactor = MainInteractor(service: HeroesService(),
+                                        databaseManager: databaseManager)
         let presenter = MainPresenter(interactor: interactor, router: self, view: view)
         let navigationController = UINavigationController(rootViewController: view)
 

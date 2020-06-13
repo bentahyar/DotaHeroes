@@ -13,13 +13,8 @@ public typealias OnComplete = (Data?) -> Void
 public typealias OnError = (Error?) -> Void
 
 public class ServiceManager {
-    private static var sharedInstance: ServiceManager?
     public class var api: ServiceManager {
-        if let sharedInstance = self.sharedInstance {
-            return sharedInstance
-        }
-
-        fatalError("ServiceManager is not initialized")
+        return ServiceManager()
     }
 
     func request(withUrl url: URLRequestConvertible,

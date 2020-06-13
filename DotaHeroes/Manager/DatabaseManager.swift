@@ -30,9 +30,28 @@ class DatabaseManager: NSObject {
         }
     }
 
-    func fetch<T: Entity>(ofType: T.Type) -> [T] {
+    func insert(data: Data) {
+        do {
+            let decoder = JSONDecoder()
+            decoder.userInfo[CodingUserInfoKey.context!] = persistentContainer.viewContext
+            let heroes = try decoder.decode([HeroesData].self, from: data)
+            try heroes.forEach { hero in
+                try hero.roles.forEach { role in
+                    let roleData = RolesData()
+                    try roleData.createOrUpdate(withRole: role, context: persistentContainer.viewContext)
+                }
+            }
+            saveContext()
+        } catch {
+            debugPrint("Error when inserting")
+        }
+    }
+
+    func fetch<T: Entity>(ofType: T.Type,
+                          sortDescriptors: [NSSortDescriptor]? = nil) -> [T] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: T.entityName())
         request.returnsObjectsAsFaults = false
+        request.sortDescriptors = sortDescriptors
 
         var entities = [T]()
         do {

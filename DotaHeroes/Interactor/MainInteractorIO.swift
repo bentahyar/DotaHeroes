@@ -9,9 +9,10 @@
 import Foundation
 
 protocol MainInteractorInput: class {
-
+    func getHeroesAndRoles()
 }
 
 protocol MainInteractorOutput: class {
-
+    func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData])
+    func showError()
 }

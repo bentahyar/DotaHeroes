@@ -27,5 +27,16 @@ class MainViewController: UIViewController, MainView {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        presenter?.getHeroesAndRoles()
+    }
+
+    // MARK: - View
+    func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData]) {
+        debugPrint("Heroes: \(heroes)")
+        debugPrint("Roles: \(roles)")
+    }
+
+    func showError() {
+        debugPrint("Error")
     }
 }

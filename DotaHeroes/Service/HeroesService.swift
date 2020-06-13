@@ -12,8 +12,11 @@ import Alamofire
 public class HeroesService {
     public init() {}
 
-    func heroes(onComplete: OnComplete?, onError: OnError?) throws {
-        let url = try ConstantsManager.url.asURL()
+    func heroes(onComplete: OnComplete?, onError: OnError?) {
+        guard let url = URL(string: ConstantsManager.url) else {
+            return
+        }
+
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = HTTPMethod.get.rawValue
 

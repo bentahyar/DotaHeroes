@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		79904F12632063F35B7C464A /* Pods_DotaHeroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A7337847739BF1A8D7CD6A /* Pods_DotaHeroes.framework */; };
+		9F628B692494B7EB00590A21 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B682494B7EB00590A21 /* Wireframe.swift */; };
 		9F76AD4B2493502D009C4620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD4A2493502D009C4620 /* AppDelegate.swift */; };
 		9F76AD552493502D009C4620 /* DotaHeroes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD532493502D009C4620 /* DotaHeroes.xcdatamodeld */; };
 		9F76AD5724935031009C4620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F76AD5624935031009C4620 /* Assets.xcassets */; };
@@ -30,6 +31,8 @@
 		9FAAB6422494999C0045BF41 /* HeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB6412494999C0045BF41 /* HeroesService.swift */; };
 		9FAAB64424949AC40045BF41 /* ConstantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB64324949AC40045BF41 /* ConstantsManager.swift */; };
 		9FAAB64924949D6D0045BF41 /* MockHeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB64824949D6D0045BF41 /* MockHeroesService.swift */; };
+		9FAAB64E2494A5620045BF41 /* MockMainOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB64D2494A5620045BF41 /* MockMainOutput.swift */; };
+		9FAAB6522494A5D30045BF41 /* MainInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB6512494A5D30045BF41 /* MainInteractorTest.swift */; };
 		9FD27CD32493BE8A005CEB9B /* RolesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD27CD22493BE8A005CEB9B /* RolesData.swift */; };
 		E5B6D71D5E358B5AC540DDBD /* Pods_DotaHeroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B25BBF52A19A0B89B19A1933 /* Pods_DotaHeroesTests.framework */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		9975A6834D77E0AC7BDBAF36 /* Pods-DotaHeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaHeroesTests.release.xcconfig"; path = "Target Support Files/Pods-DotaHeroesTests/Pods-DotaHeroesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F628B682494B7EB00590A21 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 		9F76AD472493502D009C4620 /* DotaHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F76AD4A2493502D009C4620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F76AD542493502D009C4620 /* DotaHeroes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DotaHeroes.xcdatamodel; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		9FAAB6412494999C0045BF41 /* HeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesService.swift; sourceTree = "<group>"; };
 		9FAAB64324949AC40045BF41 /* ConstantsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsManager.swift; sourceTree = "<group>"; };
 		9FAAB64824949D6D0045BF41 /* MockHeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeroesService.swift; sourceTree = "<group>"; };
+		9FAAB64D2494A5620045BF41 /* MockMainOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainOutput.swift; sourceTree = "<group>"; };
+		9FAAB6512494A5D30045BF41 /* MainInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorTest.swift; sourceTree = "<group>"; };
 		9FD27CD22493BE8A005CEB9B /* RolesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesData.swift; sourceTree = "<group>"; };
 		B25BBF52A19A0B89B19A1933 /* Pods_DotaHeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaHeroesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A7337847739BF1A8D7CD6A /* Pods_DotaHeroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DotaHeroes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +159,7 @@
 			children = (
 				9F76AD9424936A65009C4620 /* Mock */,
 				9F76AD9824936B21009C4620 /* DatabaseTest.swift */,
+				9FAAB6512494A5D30045BF41 /* MainInteractorTest.swift */,
 				9F76AD6624935032009C4620 /* Info.plist */,
 			);
 			path = DotaHeroesTests;
@@ -200,6 +207,7 @@
 		9F76AD772493588C009C4620 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				9F628B682494B7EB00590A21 /* Wireframe.swift */,
 				9F76AD86249358E8009C4620 /* MainWireframe.swift */,
 			);
 			path = Router;
@@ -226,6 +234,7 @@
 		9F76AD9424936A65009C4620 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				9FAAB64C2494A5450045BF41 /* Output */,
 				9FAAB64524949D460045BF41 /* Service */,
 				9F76AD9524936A8A009C4620 /* Database */,
 			);
@@ -262,6 +271,14 @@
 				9FAAB64824949D6D0045BF41 /* MockHeroesService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9FAAB64C2494A5450045BF41 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				9FAAB64D2494A5620045BF41 /* MockMainOutput.swift */,
+			);
+			path = Output;
 			sourceTree = "<group>";
 		};
 		9FD27CD12493BE40005CEB9B /* RolesData */ = {
@@ -471,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F628B692494B7EB00590A21 /* Wireframe.swift in Sources */,
 				9F76AD7A249358A2009C4620 /* MainViewController.swift in Sources */,
 				9F76AD83249358D5009C4620 /* MainEventHandler.swift in Sources */,
 				9F76AD8B2493677D009C4620 /* DatabaseManager.swift in Sources */,
@@ -497,6 +515,8 @@
 				9FAAB64924949D6D0045BF41 /* MockHeroesService.swift in Sources */,
 				9F76AD9724936A9C009C4620 /* MockPersistentContainer.swift in Sources */,
 				9F76AD9924936B21009C4620 /* DatabaseTest.swift in Sources */,
+				9FAAB6522494A5D30045BF41 /* MainInteractorTest.swift in Sources */,
+				9FAAB64E2494A5620045BF41 /* MockMainOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

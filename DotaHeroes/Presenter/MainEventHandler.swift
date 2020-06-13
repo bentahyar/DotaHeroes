@@ -9,5 +9,5 @@
 import Foundation
 
 protocol MainEventHandler: class {
-
+    func getHeroesAndRoles()
 }

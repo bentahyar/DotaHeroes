@@ -16,7 +16,7 @@ class MockHeroesService: HeroesService {
     var invokedHeroesParametersList = [(onComplete: OnComplete?, onError: OnError?)]()
     var stubbedHeroesError: Error?
     var stubbedHeroesSuccess: Data?
-    override func heroes(onComplete: OnComplete?, onError: OnError?) throws {
+    override func heroes(onComplete: OnComplete?, onError: OnError?) {
         invokedHeroes = true
         invokedHeroesCount += 1
         invokedHeroesParameters = (onComplete, onError)
