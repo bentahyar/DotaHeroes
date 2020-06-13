@@ -10,4 +10,5 @@ import Foundation
 
 protocol MainEventHandler: class {
     func getHeroesAndRoles()
+    func getFilteredHeroes(withRole role: RolesData)
 }

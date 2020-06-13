@@ -10,9 +10,11 @@ import Foundation
 
 protocol MainInteractorInput: class {
     func getHeroesAndRoles()
+    func getFilteredHeroes(withRole role: RolesData)
 }
 
 protocol MainInteractorOutput: class {
     func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData])
+    func showFilteredHeroes(heroes: [HeroesData])
     func showError()
 }

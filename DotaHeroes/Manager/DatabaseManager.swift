@@ -41,6 +41,8 @@ class DatabaseManager: NSObject {
                     try roleData.createOrUpdate(withRole: role, context: persistentContainer.viewContext)
                 }
             }
+            let roleData = RolesData()
+            try roleData.createOrUpdate(withRole: "All", context: persistentContainer.viewContext)
             saveContext()
         } catch {
             debugPrint("Error when inserting")

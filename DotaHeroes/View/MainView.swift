@@ -10,5 +10,6 @@ import Foundation
 
 protocol MainView: class {
     func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData])
+    func showFilteredHeroes(heroes: [HeroesData])
     func showError()
 }

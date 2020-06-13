@@ -17,6 +17,18 @@ class RolesCell: UICollectionViewCell {
         }
     }
 
+    override var isSelected: Bool {
+        didSet {
+            if isSelected {
+                self.roleLabel.backgroundColor = .gray
+                self.roleLabel.textColor = .white
+            } else {
+                self.roleLabel.backgroundColor = .white
+                self.roleLabel.textColor = .black
+            }
+        }
+    }
+
     static func getCellSize(withText text: String) -> CGSize {
         let font = UIFont.systemFont(ofSize: 10)
         let textWidth = text.size(withAttributes: [.font: font]).width + 30.0

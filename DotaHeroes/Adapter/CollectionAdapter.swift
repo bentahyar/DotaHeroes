@@ -10,10 +10,16 @@ import Foundation
 import UIKit
 import CoreData
 
+protocol CollectionAdapterDelegate: class {
+    func didSelectRole(withRole role: RolesData, indexPath: IndexPath)
+    func didSelectHero(withHero hero: HeroesData, indexPath: IndexPath)
+}
+
 public class CollectionAdapter: NSObject, UICollectionViewDelegate, UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout {
     public unowned let collectionView: UICollectionView
     private(set) var data = [Entity]()
+    weak var delegate: CollectionAdapterDelegate?
 
     init(collectionView: UICollectionView, withData data: [Entity]) {
         self.collectionView = collectionView
@@ -33,6 +39,11 @@ UICollectionViewDelegateFlowLayout {
                                 forCellWithReuseIdentifier: RolesCell.reuseIdentifier())
 
         collectionView.reloadData()
+    }
+
+    func update(withData data: [Entity]) {
+        self.data = data
+        self.collectionView.reloadData()
     }
 
     public func collectionView(_ collectionView: UICollectionView,
@@ -75,6 +86,20 @@ UICollectionViewDelegateFlowLayout {
             return RolesCell.getCellSize(withText: role.role)
         default:
             return .zero
+        }
+    }
+
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let entity = data[indexPath.row]
+
+        switch entity {
+        case let hero as HeroesData:
+            self.delegate?.didSelectHero(withHero: hero, indexPath: indexPath)
+        case let role as RolesData:
+            self.delegate?.didSelectRole(withRole: role, indexPath: indexPath)
+            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        default:
+            break
         }
     }
 }

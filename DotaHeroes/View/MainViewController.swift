@@ -40,9 +40,29 @@ class MainViewController: UIViewController, MainView {
     func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData]) {
         heroesAdapter = CollectionAdapter(collectionView: heroesCollectionView, withData: heroes)
         rolesAdapter = CollectionAdapter(collectionView: rolesCollectionView, withData: roles)
+
+        heroesAdapter?.delegate = self
+        rolesAdapter?.delegate = self
+
+        // Set selected item at all when first load
+        rolesCollectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: false, scrollPosition: .left)
     }
 
     func showError() {
         debugPrint("Error")
+    }
+
+    func showFilteredHeroes(heroes: [HeroesData]) {
+        self.heroesAdapter?.update(withData: heroes)
+    }
+}
+
+extension MainViewController: CollectionAdapterDelegate {
+    func didSelectRole(withRole role: RolesData, indexPath: IndexPath) {
+        presenter?.getFilteredHeroes(withRole: role)
+    }
+
+    func didSelectHero(withHero hero: HeroesData, indexPath: IndexPath) {
+
     }
 }

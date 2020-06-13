@@ -67,7 +67,7 @@ class DotaHeroesTests: XCTestCase {
         
         let roles = mockCoreDataManager?.fetch(ofType: RolesData.self)
         
-        XCTAssert(roles?.count == 8, "Expected number of roles is 8")
+        XCTAssert(roles?.count == 9, "Expected number of roles is 9")
     }
 
 }

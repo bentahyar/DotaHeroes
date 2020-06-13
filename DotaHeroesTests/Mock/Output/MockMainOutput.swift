@@ -20,6 +20,16 @@ class MockMainOutput: MainInteractorOutput {
         invokedShowHeroesAndRolesParameters = (heroes, roles)
         invokedShowHeroesAndRolesParametersList.append((heroes, roles))
     }
+    var invokedShowFilteredHeroes = false
+    var invokedShowFilteredHeroesCount = 0
+    var invokedShowFilteredHeroesParameters: (heroes: [HeroesData], Void)?
+    var invokedShowFilteredHeroesParametersList = [(heroes: [HeroesData], Void)]()
+    func showFilteredHeroes(heroes: [HeroesData]) {
+        invokedShowFilteredHeroes = true
+        invokedShowFilteredHeroesCount += 1
+        invokedShowFilteredHeroesParameters = (heroes, ())
+        invokedShowFilteredHeroesParametersList.append((heroes, ()))
+    }
     var invokedShowError = false
     var invokedShowErrorCount = 0
     func showError() {

@@ -27,9 +27,17 @@ class MainPresenter: MainEventHandler, MainInteractorOutput {
         interactor.getHeroesAndRoles()
     }
 
+    func getFilteredHeroes(withRole role: RolesData) {
+        interactor.getFilteredHeroes(withRole: role)
+    }
+
     // MARK: - Output
     func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData]) {
         view?.showHeroesAndRoles(heroes: heroes, roles: roles)
+    }
+
+    func showFilteredHeroes(heroes: [HeroesData]) {
+        view?.showFilteredHeroes(heroes: heroes)
     }
 
     func showError() {

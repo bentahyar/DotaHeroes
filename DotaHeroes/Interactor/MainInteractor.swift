@@ -19,9 +19,10 @@ class MainInteractor: MainInteractorInput {
     }
 
     func getHeroesAndRoles() {
-        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
-        let heroes = self.databaseManager.fetch(ofType: HeroesData.self, sortDescriptors: [sortDescriptor])
-        let roles = self.databaseManager.fetch(ofType: RolesData.self)
+        let heroesSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        let rolesSortDescriptor = NSSortDescriptor(key: "role", ascending: true)
+        let heroes = self.databaseManager.fetch(ofType: HeroesData.self, sortDescriptors: [heroesSortDescriptor])
+        let roles = self.databaseManager.fetch(ofType: RolesData.self, sortDescriptors: [rolesSortDescriptor])
         guard heroes.isEmpty == true, roles.isEmpty == true else {
             self.output?.showHeroesAndRoles(heroes: heroes, roles: roles)
             return
@@ -33,12 +34,27 @@ class MainInteractor: MainInteractorInput {
             }
             self.databaseManager.insert(data: data)
             let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+            let rolesSortDescriptor = NSSortDescriptor(key: "role", ascending: true)
             let heroes = self.databaseManager.fetch(ofType: HeroesData.self, sortDescriptors: [sortDescriptor])
-            let roles = self.databaseManager.fetch(ofType: RolesData.self)
+            let roles = self.databaseManager.fetch(ofType: RolesData.self, sortDescriptors: [rolesSortDescriptor])
 
             self.output?.showHeroesAndRoles(heroes: heroes, roles: roles)
         }, onError: { _ in
             self.output?.showError()
         })
+    }
+
+    func getFilteredHeroes(withRole role: RolesData) {
+        guard role.role != "All" else {
+            let heroesSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+            let heroes = self.databaseManager.fetch(ofType: HeroesData.self, sortDescriptors: [heroesSortDescriptor])
+            self.output?.showFilteredHeroes(heroes: heroes)
+            return
+        }
+        let heroesSortDescriptor = NSSortDescriptor(key: "name", ascending: true)
+        let heroes = self.databaseManager.fetch(ofType: HeroesData.self, sortDescriptors: [heroesSortDescriptor])
+        let filteredHeroes = heroes.filter({ $0.roles.contains(role.role) })
+
+        self.output?.showFilteredHeroes(heroes: filteredHeroes)
     }
 }
