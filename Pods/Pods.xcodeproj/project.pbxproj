@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -19,12 +19,51 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0B8F389163517B2931651EE54DBFFA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		171CA2C801622BF5D3E34FF038F2F566 /* Pods-DotaHeroes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A898F2C7D78C13F228EB34BE9F8570 /* Pods-DotaHeroes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36F7DFF84AB88A297C3D9D4CB94BEF51 /* Pods-DotaHeroes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A475A69D2FA974DF82BD8703856C172 /* Pods-DotaHeroes-dummy.m */; };
-		49ADE649EA4A23FAFFA9EF4AAAE2F556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BBE9967241C71FFEFEDEB45E1DA9C6FE /* Pods-DotaHeroesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADF6211207FA690FE63B2C6B8014A717 /* Pods-DotaHeroesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F703B00E5E8BCE37BD15E549A5215278 /* Pods-DotaHeroesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 866CEBF45763284E780B563018ECF251 /* Pods-DotaHeroesTests-dummy.m */; };
+		013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3652F63923EAACD44CE7734A45EAF2B7 /* HTTPMethod.swift */; };
+		0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E783F127AFEE9E5330F32C1807C7807 /* Combine.swift */; };
+		0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BAF8F5D365B4C33BA4B9669DFFE632 /* OperationQueue+Alamofire.swift */; };
+		0B8F389163517B2931651EE54DBFFA28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B08639375DD4FF1FAE248E115B89439 /* AFError.swift */; };
+		19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA0D848F5170BD429CF662C369F9439 /* NetworkReachabilityManager.swift */; };
+		212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927BA7ABC74516E868A7D12E9BD6832F /* StringEncoding+Alamofire.swift */; };
+		218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC390CF94D1F50E4991A74DD10FC84 /* Protected.swift */; };
+		27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707E7EC47892DC85016FB18F411E4D1 /* DispatchQueue+Alamofire.swift */; };
+		381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC282FBF9F506BCDD73DE281472273 /* SessionDelegate.swift */; };
+		45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C713A249E2452FEFB24292F79756D /* MultipartFormData.swift */; };
+		47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1E0AAC1637BD342568C510436A4DE0 /* ServerTrustEvaluation.swift */; };
+		48D855FEC0D3DACB0A1F148702BA150E /* Pods-DotaHeroes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CF3D3B3B221C17CD9B4B332FCCA801 /* Pods-DotaHeroes-dummy.m */; };
+		4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F94FCFC0AEB88461050FBEF612E6A9 /* ParameterEncoder.swift */; };
+		6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DFC6341ECD1205CB9B9D5E0EDCBD08 /* EventMonitor.swift */; };
+		666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16C16F11DC42605C56B551621BBA819 /* RedirectHandler.swift */; };
+		66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2CDAAC8ED14D51B04F0113691147F8 /* Result+Alamofire.swift */; };
+		6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1266A8961A531F0933AEFECC8F37A6E4 /* Session.swift */; };
+		6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3BCA2F105E17F0764D1ADDD8E837B /* RequestTaskMap.swift */; };
+		6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDAE94BF2DBC61BCAF0DE5DBB9D1D69 /* RequestInterceptor.swift */; };
+		72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439E0C8A24F082B8B632A61D66AC67B1 /* AlamofireExtended.swift */; };
+		7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2737DF17BD5BC851629BB5B8879FB828 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B116DCFF46E4F8223FDE19D342C2C22 /* Notifications.swift */; };
+		911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC51053263FC7A104D892DBE895E18B /* ResponseSerialization.swift */; };
+		91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D08CB5AF355CF59BC34AADDF7CCF99 /* HTTPHeaders.swift */; };
+		9B13B89E79D3B83F901932ED2894AA8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008DA8D598192ECE4CF28CE627DB7D28 /* URLConvertible+URLRequestConvertible.swift */; };
+		9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75860F31F8FD7EB9A8B90DEE5475D50 /* RetryPolicy.swift */; };
+		A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */; };
+		ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A904C173BDC5135CB162B5ECA4297BBF /* CachedResponseHandler.swift */; };
+		BBE9967241C71FFEFEDEB45E1DA9C6FE /* Pods-DotaHeroesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 374D8D29817A7C1831791582D0F261D2 /* Pods-DotaHeroesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF139B9E470B77325BA147DFE3E560B /* Response.swift */; };
+		C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9EE4EB58D10D7CC047416093804459 /* Alamofire.swift */; };
+		C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04395277D4283B378A81FBEBD6E14C95 /* Alamofire-dummy.m */; };
+		D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB24F7A9337F39278A5FF3CA9E1DDB2 /* MultipartUpload.swift */; };
+		D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94495E39E9C2C6A85743840C6CC2C4E2 /* ParameterEncoding.swift */; };
+		D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CB40A881EC00463397CCE4801CFC6E /* URLEncodedFormEncoder.swift */; };
+		D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EC3AE21037CF1AF5084425BEC68B4B /* URLRequest+Alamofire.swift */; };
+		DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90CEB9A832E5EAD1B924D069F8615AF /* AuthenticationInterceptor.swift */; };
+		E1DF3227888ECC691AF3A17897A21507 /* Pods-DotaHeroes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9831D2C4202D9D93C44B5DCBFB5FEF65 /* Pods-DotaHeroes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1626AF11E038771E87D5437F78C95745 /* Request.swift */; };
+		F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F26D369A6ECE676774AC819B139B407 /* Validation.swift */; };
+		F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */; };
+		F703B00E5E8BCE37BD15E549A5215278 /* Pods-DotaHeroesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3330D51147F7737B8BC38CE6709BF8B6 /* Pods-DotaHeroesTests-dummy.m */; };
+		F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFFEEAEDC9F831D30FF5934BDC4CDA /* URLSessionConfiguration+Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +74,14 @@
 			remoteGlobalIDString = FD01AC69E39C67E04E2047D3718CF226;
 			remoteInfo = "Pods-DotaHeroes";
 		};
-		163EAA358E2D39C500FFCB9C73C0AF18 /* PBXContainerItemProxy */ = {
+		2FDEF7AD2C13BEA4307438C9E6D78B72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		71EEA251B70FCDAD6EF3FAEF9097F705 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -45,38 +91,74 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A475A69D2FA974DF82BD8703856C172 /* Pods-DotaHeroes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DotaHeroes-dummy.m"; sourceTree = "<group>"; };
-		1C2C26B1B7094BC1C74B0FABFB9F4C97 /* Pods-DotaHeroesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroesTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1F0E5DECCFC7E94D149A9903FFDEB5CA /* Pods-DotaHeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroesTests.release.xcconfig"; sourceTree = "<group>"; };
-		29EDB7F8EB6DE4CCD1266D70BD3946B5 /* Pods-DotaHeroesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DotaHeroesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3E6C67445DE468B5157585E27DF3177A /* Pods-DotaHeroes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DotaHeroes-acknowledgements.markdown"; sourceTree = "<group>"; };
-		40EBE8A2D74D7082E277381AC430ED43 /* Pods-DotaHeroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroes.debug.xcconfig"; sourceTree = "<group>"; };
-		6B36D32898317D8E071540C77626A1D1 /* Pods-DotaHeroes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroes-acknowledgements.plist"; sourceTree = "<group>"; };
-		6CB37037F2330386440CCFC1C91D75DB /* Pods-DotaHeroesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroesTests-Info.plist"; sourceTree = "<group>"; };
-		7EC69CED1E796832F02A8B3B7445F1BA /* Pods-DotaHeroesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DotaHeroesTests.modulemap"; sourceTree = "<group>"; };
-		866CEBF45763284E780B563018ECF251 /* Pods-DotaHeroesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DotaHeroesTests-dummy.m"; sourceTree = "<group>"; };
-		89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
-		979E04583EA9369696E3CB24B96BEE98 /* Pods-DotaHeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		008DA8D598192ECE4CF28CE627DB7D28 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+		02EC282FBF9F506BCDD73DE281472273 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		04395277D4283B378A81FBEBD6E14C95 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		0B08639375DD4FF1FAE248E115B89439 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		0E783F127AFEE9E5330F32C1807C7807 /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
+		1266A8961A531F0933AEFECC8F37A6E4 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
+		1626AF11E038771E87D5437F78C95745 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		1B116DCFF46E4F8223FDE19D342C2C22 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		22039B3FA7CE137F8415BDB84AE5A8C3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2737DF17BD5BC851629BB5B8879FB828 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		27F94FCFC0AEB88461050FBEF612E6A9 /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
+		2BF139B9E470B77325BA147DFE3E560B /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		3330D51147F7737B8BC38CE6709BF8B6 /* Pods-DotaHeroesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DotaHeroesTests-dummy.m"; sourceTree = "<group>"; };
+		3652F63923EAACD44CE7734A45EAF2B7 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
+		374D8D29817A7C1831791582D0F261D2 /* Pods-DotaHeroesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DotaHeroesTests-umbrella.h"; sourceTree = "<group>"; };
+		3CC51053263FC7A104D892DBE895E18B /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		439E0C8A24F082B8B632A61D66AC67B1 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
+		44DFC6341ECD1205CB9B9D5E0EDCBD08 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
+		4AB24F7A9337F39278A5FF3CA9E1DDB2 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
+		4D98276426AFE9C88C3ACC5D77A5BCA2 /* Pods-DotaHeroesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroesTests-Info.plist"; sourceTree = "<group>"; };
+		505AF1C3EE0367B7B9D7C7AF8DE00439 /* Pods-DotaHeroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A5E903CFE60C74D414929F01D883EAF /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F26D369A6ECE676774AC819B139B407 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		67CB40A881EC00463397CCE4801CFC6E /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
+		6C46972B047062FD2BABDA32658EAF5F /* Pods-DotaHeroes-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroes-Info.plist"; sourceTree = "<group>"; };
+		6F1E0AAC1637BD342568C510436A4DE0 /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
+		8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		8FA3BCA2F105E17F0764D1ADDD8E837B /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		90F11BEB929F99A62D15E26BC553ED1C /* Pods-DotaHeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroesTests.release.xcconfig"; sourceTree = "<group>"; };
+		91EC3AE21037CF1AF5084425BEC68B4B /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
+		927BA7ABC74516E868A7D12E9BD6832F /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
+		92BAF8F5D365B4C33BA4B9669DFFE632 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		94495E39E9C2C6A85743840C6CC2C4E2 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		9707E7EC47892DC85016FB18F411E4D1 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		9831D2C4202D9D93C44B5DCBFB5FEF65 /* Pods-DotaHeroes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DotaHeroes-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A5A898F2C7D78C13F228EB34BE9F8570 /* Pods-DotaHeroes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DotaHeroes-umbrella.h"; sourceTree = "<group>"; };
-		A8345907C1B0B924C6C27BC2A7AB75F9 /* Pods-DotaHeroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroes.release.xcconfig"; sourceTree = "<group>"; };
-		ACE8F8C13D7252E318AE6104279CE9D9 /* Pods-DotaHeroes-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroes-Info.plist"; sourceTree = "<group>"; };
-		ADF6211207FA690FE63B2C6B8014A717 /* Pods-DotaHeroesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DotaHeroesTests-umbrella.h"; sourceTree = "<group>"; };
+		9EEC390CF94D1F50E4991A74DD10FC84 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
+		A0069914838877649E0127AC33E8A080 /* Pods-DotaHeroes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DotaHeroes-frameworks.sh"; sourceTree = "<group>"; };
+		A01D10BCABEC52BB2A92C2EE56131B74 /* Pods-DotaHeroesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DotaHeroesTests.modulemap"; sourceTree = "<group>"; };
+		A904C173BDC5135CB162B5ECA4297BBF /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		A90CEB9A832E5EAD1B924D069F8615AF /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
+		AC8F95CD7E34152461F42513162DCB1C /* SwiftLint.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.xcconfig; sourceTree = "<group>"; };
+		B16C16F11DC42605C56B551621BBA819 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
+		B2FF5F9594BDD9694A7A6416F8FB17E8 /* Pods-DotaHeroesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DotaHeroesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BAA0D848F5170BD429CF662C369F9439 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
 		BB567F3CAF4EA634225FDC99B6253723 /* Pods_DotaHeroesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DotaHeroesTests.framework; path = "Pods-DotaHeroesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D08CB5AF355CF59BC34AADDF7CCF99 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
+		CBF365E544CA4AE4A9C79C05F172DF26 /* Pods-DotaHeroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroes.debug.xcconfig"; sourceTree = "<group>"; };
+		CF8CB6C6E964B22DD2FCD8A198E497E2 /* Pods-DotaHeroes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroes-acknowledgements.plist"; sourceTree = "<group>"; };
+		D5468828CE31CE69B9925E2AE876DE97 /* Pods-DotaHeroes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DotaHeroes-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D9CFFEEAEDC9F831D30FF5934BDC4CDA /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
+		DAB01D6A81FF923598C65E77E2E70A78 /* Pods-DotaHeroes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DotaHeroes.modulemap"; sourceTree = "<group>"; };
+		DCDAE94BF2DBC61BCAF0DE5DBB9D1D69 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
+		DF1C713A249E2452FEFB24292F79756D /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		E8960A4E534301A954009092AE3DEC16 /* Pods_DotaHeroes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DotaHeroes.framework; path = "Pods-DotaHeroes.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F56F9247D52533100A89EFAE385D17A7 /* Pods-DotaHeroes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DotaHeroes.modulemap"; sourceTree = "<group>"; };
+		E8AE8A9E9DFF1F68734FB12AE49C9DBB /* Pods-DotaHeroesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DotaHeroesTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED0939A5A090FC632E244562CFB2D8D2 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		ED2CDAAC8ED14D51B04F0113691147F8 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
+		F0CF3D3B3B221C17CD9B4B332FCCA801 /* Pods-DotaHeroes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DotaHeroes-dummy.m"; sourceTree = "<group>"; };
+		F75860F31F8FD7EB9A8B90DEE5475D50 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
+		FDF2F4B3A108ACFD865EBA5BBADDA0D1 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		FE9EE4EB58D10D7CC047416093804459 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		FF6CEA4CC8E13A72C930759932FF3815 /* Pods-DotaHeroes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DotaHeroes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3420B960208851A918E2388CF462CCE4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				49ADE649EA4A23FAFFA9EF4AAAE2F556 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7E0CA7E7306E2A9EF36D212021B064AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,120 +167,207 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A738C2A39C0150BBA7EA5EC19B95F03E /* CFNetwork.framework in Frameworks */,
+				F6B16DC8CADA07287C6A372AC8AD787C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E98DC6CC67FBB371E4BB3341E2A984BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B13B89E79D3B83F901932ED2894AA8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		43454A0A3F8B659858B2483A3C930B9F /* Pods-DotaHeroes */ = {
+		134DCF428FD90F2DC3E77104AAA1E7F6 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F56F9247D52533100A89EFAE385D17A7 /* Pods-DotaHeroes.modulemap */,
-				3E6C67445DE468B5157585E27DF3177A /* Pods-DotaHeroes-acknowledgements.markdown */,
-				6B36D32898317D8E071540C77626A1D1 /* Pods-DotaHeroes-acknowledgements.plist */,
-				1A475A69D2FA974DF82BD8703856C172 /* Pods-DotaHeroes-dummy.m */,
-				ACE8F8C13D7252E318AE6104279CE9D9 /* Pods-DotaHeroes-Info.plist */,
-				A5A898F2C7D78C13F228EB34BE9F8570 /* Pods-DotaHeroes-umbrella.h */,
-				40EBE8A2D74D7082E277381AC430ED43 /* Pods-DotaHeroes.debug.xcconfig */,
-				A8345907C1B0B924C6C27BC2A7AB75F9 /* Pods-DotaHeroes.release.xcconfig */,
+				55BAA4ED34B48B4F3FE19175A6DA3E54 /* Pods-DotaHeroes */,
+				AE8566747A86E2D4A29AED450CDDDBBE /* Pods-DotaHeroesTests */,
 			);
-			name = "Pods-DotaHeroes";
-			path = "Target Support Files/Pods-DotaHeroes";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		8C5A486AC1E01BF48D272F4B7E98FC67 /* Pods-DotaHeroesTests */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7EC69CED1E796832F02A8B3B7445F1BA /* Pods-DotaHeroesTests.modulemap */,
-				29EDB7F8EB6DE4CCD1266D70BD3946B5 /* Pods-DotaHeroesTests-acknowledgements.markdown */,
-				1C2C26B1B7094BC1C74B0FABFB9F4C97 /* Pods-DotaHeroesTests-acknowledgements.plist */,
-				866CEBF45763284E780B563018ECF251 /* Pods-DotaHeroesTests-dummy.m */,
-				6CB37037F2330386440CCFC1C91D75DB /* Pods-DotaHeroesTests-Info.plist */,
-				ADF6211207FA690FE63B2C6B8014A717 /* Pods-DotaHeroesTests-umbrella.h */,
-				979E04583EA9369696E3CB24B96BEE98 /* Pods-DotaHeroesTests.debug.xcconfig */,
-				1F0E5DECCFC7E94D149A9903FFDEB5CA /* Pods-DotaHeroesTests.release.xcconfig */,
+				E34DCC8E2CF86B8D72232914781A840D /* iOS */,
 			);
-			name = "Pods-DotaHeroesTests";
-			path = "Target Support Files/Pods-DotaHeroesTests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
+		331C855DC4CAB3ACA1E3414304CF2C77 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */,
+				A855FFA1AD5784F1B4ED306EBAA62CFD /* Alamofire */,
+				513C5C9363E3C14C521850386962792D /* SwiftLint */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9AED61B9A1CFA211C061344F741DBA07 /* SwiftLint */ = {
+		513C5C9363E3C14C521850386962792D /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */,
+				EABD22C95CFF734976EEED291319390D /* Support Files */,
 			);
 			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		55BAA4ED34B48B4F3FE19175A6DA3E54 /* Pods-DotaHeroes */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				DAB01D6A81FF923598C65E77E2E70A78 /* Pods-DotaHeroes.modulemap */,
+				D5468828CE31CE69B9925E2AE876DE97 /* Pods-DotaHeroes-acknowledgements.markdown */,
+				CF8CB6C6E964B22DD2FCD8A198E497E2 /* Pods-DotaHeroes-acknowledgements.plist */,
+				F0CF3D3B3B221C17CD9B4B332FCCA801 /* Pods-DotaHeroes-dummy.m */,
+				A0069914838877649E0127AC33E8A080 /* Pods-DotaHeroes-frameworks.sh */,
+				6C46972B047062FD2BABDA32658EAF5F /* Pods-DotaHeroes-Info.plist */,
+				9831D2C4202D9D93C44B5DCBFB5FEF65 /* Pods-DotaHeroes-umbrella.h */,
+				CBF365E544CA4AE4A9C79C05F172DF26 /* Pods-DotaHeroes.debug.xcconfig */,
+				FF6CEA4CC8E13A72C930759932FF3815 /* Pods-DotaHeroes.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-DotaHeroes";
+			path = "Target Support Files/Pods-DotaHeroes";
 			sourceTree = "<group>";
 		};
-		C182699B9C826140A16EC73E45C32F7C /* Targets Support Files */ = {
+		607B36BA5F3D8EF171A87D4065920879 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43454A0A3F8B659858B2483A3C930B9F /* Pods-DotaHeroes */,
-				8C5A486AC1E01BF48D272F4B7E98FC67 /* Pods-DotaHeroesTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		CF1408CF629C7361332E53B88F7BD30C = {
-			isa = PBXGroup;
-			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				965877409E01FB3D85D85E90E6B30185 /* Pods */,
-				F8FE7DC3D0BA164ECC36E615448F0EF2 /* Products */,
-				C182699B9C826140A16EC73E45C32F7C /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EEA599FE5C15138FF0981CCFB01E55AA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
-		F8FE7DC3D0BA164ECC36E615448F0EF2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
 				E8960A4E534301A954009092AE3DEC16 /* Pods_DotaHeroes.framework */,
 				BB567F3CAF4EA634225FDC99B6253723 /* Pods_DotaHeroesTests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A855FFA1AD5784F1B4ED306EBAA62CFD /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				0B08639375DD4FF1FAE248E115B89439 /* AFError.swift */,
+				FE9EE4EB58D10D7CC047416093804459 /* Alamofire.swift */,
+				439E0C8A24F082B8B632A61D66AC67B1 /* AlamofireExtended.swift */,
+				A90CEB9A832E5EAD1B924D069F8615AF /* AuthenticationInterceptor.swift */,
+				A904C173BDC5135CB162B5ECA4297BBF /* CachedResponseHandler.swift */,
+				0E783F127AFEE9E5330F32C1807C7807 /* Combine.swift */,
+				9707E7EC47892DC85016FB18F411E4D1 /* DispatchQueue+Alamofire.swift */,
+				44DFC6341ECD1205CB9B9D5E0EDCBD08 /* EventMonitor.swift */,
+				C4D08CB5AF355CF59BC34AADDF7CCF99 /* HTTPHeaders.swift */,
+				3652F63923EAACD44CE7734A45EAF2B7 /* HTTPMethod.swift */,
+				DF1C713A249E2452FEFB24292F79756D /* MultipartFormData.swift */,
+				4AB24F7A9337F39278A5FF3CA9E1DDB2 /* MultipartUpload.swift */,
+				BAA0D848F5170BD429CF662C369F9439 /* NetworkReachabilityManager.swift */,
+				1B116DCFF46E4F8223FDE19D342C2C22 /* Notifications.swift */,
+				92BAF8F5D365B4C33BA4B9669DFFE632 /* OperationQueue+Alamofire.swift */,
+				27F94FCFC0AEB88461050FBEF612E6A9 /* ParameterEncoder.swift */,
+				94495E39E9C2C6A85743840C6CC2C4E2 /* ParameterEncoding.swift */,
+				9EEC390CF94D1F50E4991A74DD10FC84 /* Protected.swift */,
+				B16C16F11DC42605C56B551621BBA819 /* RedirectHandler.swift */,
+				1626AF11E038771E87D5437F78C95745 /* Request.swift */,
+				DCDAE94BF2DBC61BCAF0DE5DBB9D1D69 /* RequestInterceptor.swift */,
+				8FA3BCA2F105E17F0764D1ADDD8E837B /* RequestTaskMap.swift */,
+				2BF139B9E470B77325BA147DFE3E560B /* Response.swift */,
+				3CC51053263FC7A104D892DBE895E18B /* ResponseSerialization.swift */,
+				ED2CDAAC8ED14D51B04F0113691147F8 /* Result+Alamofire.swift */,
+				F75860F31F8FD7EB9A8B90DEE5475D50 /* RetryPolicy.swift */,
+				6F1E0AAC1637BD342568C510436A4DE0 /* ServerTrustEvaluation.swift */,
+				1266A8961A531F0933AEFECC8F37A6E4 /* Session.swift */,
+				02EC282FBF9F506BCDD73DE281472273 /* SessionDelegate.swift */,
+				927BA7ABC74516E868A7D12E9BD6832F /* StringEncoding+Alamofire.swift */,
+				008DA8D598192ECE4CF28CE627DB7D28 /* URLConvertible+URLRequestConvertible.swift */,
+				67CB40A881EC00463397CCE4801CFC6E /* URLEncodedFormEncoder.swift */,
+				91EC3AE21037CF1AF5084425BEC68B4B /* URLRequest+Alamofire.swift */,
+				D9CFFEEAEDC9F831D30FF5934BDC4CDA /* URLSessionConfiguration+Alamofire.swift */,
+				5F26D369A6ECE676774AC819B139B407 /* Validation.swift */,
+				C7E3637D84350F5A1B6238F210483A63 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		AE8566747A86E2D4A29AED450CDDDBBE /* Pods-DotaHeroesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A01D10BCABEC52BB2A92C2EE56131B74 /* Pods-DotaHeroesTests.modulemap */,
+				B2FF5F9594BDD9694A7A6416F8FB17E8 /* Pods-DotaHeroesTests-acknowledgements.markdown */,
+				E8AE8A9E9DFF1F68734FB12AE49C9DBB /* Pods-DotaHeroesTests-acknowledgements.plist */,
+				3330D51147F7737B8BC38CE6709BF8B6 /* Pods-DotaHeroesTests-dummy.m */,
+				4D98276426AFE9C88C3ACC5D77A5BCA2 /* Pods-DotaHeroesTests-Info.plist */,
+				374D8D29817A7C1831791582D0F261D2 /* Pods-DotaHeroesTests-umbrella.h */,
+				505AF1C3EE0367B7B9D7C7AF8DE00439 /* Pods-DotaHeroesTests.debug.xcconfig */,
+				90F11BEB929F99A62D15E26BC553ED1C /* Pods-DotaHeroesTests.release.xcconfig */,
+			);
+			name = "Pods-DotaHeroesTests";
+			path = "Target Support Files/Pods-DotaHeroesTests";
+			sourceTree = "<group>";
+		};
+		C7E3637D84350F5A1B6238F210483A63 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDF2F4B3A108ACFD865EBA5BBADDA0D1 /* Alamofire.modulemap */,
+				ED0939A5A090FC632E244562CFB2D8D2 /* Alamofire.xcconfig */,
+				04395277D4283B378A81FBEBD6E14C95 /* Alamofire-dummy.m */,
+				5A5E903CFE60C74D414929F01D883EAF /* Alamofire-Info.plist */,
+				22039B3FA7CE137F8415BDB84AE5A8C3 /* Alamofire-prefix.pch */,
+				2737DF17BD5BC851629BB5B8879FB828 /* Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				331C855DC4CAB3ACA1E3414304CF2C77 /* Pods */,
+				607B36BA5F3D8EF171A87D4065920879 /* Products */,
+				134DCF428FD90F2DC3E77104AAA1E7F6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E34DCC8E2CF86B8D72232914781A840D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				8B079F294DA5D9A879E6D53A91F51A1E /* CFNetwork.framework */,
+				222DAEF0D819F359AFCFF3D4F927E8A7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EABD22C95CFF734976EEED291319390D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC8F95CD7E34152461F42513162DCB1C /* SwiftLint.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		89A6FAB9D1F9161C3C77A1E735810833 /* Headers */ = {
+		797E39C01B291F6139B79ECE0C6EE735 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				171CA2C801622BF5D3E34FF038F2F566 /* Pods-DotaHeroes-umbrella.h in Headers */,
+				E1DF3227888ECC691AF3A17897A21507 /* Pods-DotaHeroes-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8070B01910C64B9AFD0DB550EDE38D6B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D3DD4A8BB36733BA15868F7FB8C56CE /* Alamofire-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,19 +401,38 @@
 			productReference = BB567F3CAF4EA634225FDC99B6253723 /* Pods_DotaHeroesTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FD01AC69E39C67E04E2047D3718CF226 /* Pods-DotaHeroes */ = {
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93C780B0CB78C9487EC5699061596834 /* Build configuration list for PBXNativeTarget "Pods-DotaHeroes" */;
+			buildConfigurationList = 78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				89A6FAB9D1F9161C3C77A1E735810833 /* Headers */,
-				A1FD2FFB2BC1725747FAD5657783999D /* Sources */,
-				3420B960208851A918E2388CF462CCE4 /* Frameworks */,
-				65D9F2B27F45B5D84F5E6199D5405457 /* Resources */,
+				8070B01910C64B9AFD0DB550EDE38D6B /* Headers */,
+				2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */,
+				9590D3FE7A79CD7CBEE3F346E8C19D4D /* Frameworks */,
+				9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A4F41218E4B094BEECC49D30DD3B76EC /* PBXTargetDependency */,
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD01AC69E39C67E04E2047D3718CF226 /* Pods-DotaHeroes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F4105687F57E3A59C96AF5366AD1671 /* Build configuration list for PBXNativeTarget "Pods-DotaHeroes" */;
+			buildPhases = (
+				797E39C01B291F6139B79ECE0C6EE735 /* Headers */,
+				8714F6AC207FF98D560EF2C57385ACEA /* Sources */,
+				E98DC6CC67FBB371E4BB3341E2A984BA /* Frameworks */,
+				4CC1D81DF89DDC56ED088E66AAE399B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5216C601BE76FC8B948BC586BECA4354 /* PBXTargetDependency */,
+				1C335A57762E202CE8BED44F1CB925C1 /* PBXTargetDependency */,
 			);
 			name = "Pods-DotaHeroes";
 			productName = "Pods-DotaHeroes";
@@ -261,7 +449,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -269,10 +457,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = F8FE7DC3D0BA164ECC36E615448F0EF2 /* Products */;
+			productRefGroup = 607B36BA5F3D8EF171A87D4065920879 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
 				FD01AC69E39C67E04E2047D3718CF226 /* Pods-DotaHeroes */,
 				51100414161029C526D13BB16032343E /* Pods-DotaHeroesTests */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
@@ -288,7 +477,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65D9F2B27F45B5D84F5E6199D5405457 /* Resources */ = {
+		4CC1D81DF89DDC56ED088E66AAE399B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BCA7D105D531AE5DAF34FB86A2E623A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,6 +494,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2C8326877F6A9617C2FBE9BD15D95B59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1208E81DA8B532D0646D627B50290EB6 /* AFError.swift in Sources */,
+				C6D5A4B4028B2C43380C9FA58BD5C8CA /* Alamofire-dummy.m in Sources */,
+				C1F1DB6A9CBDE584D09BA1613AAD4F9D /* Alamofire.swift in Sources */,
+				72EC2712926E6D28B52360D9AC41668F /* AlamofireExtended.swift in Sources */,
+				DC627AFC5B585686898B014184AFCABD /* AuthenticationInterceptor.swift in Sources */,
+				ABA85887A41495358C83CE3F3030EDEA /* CachedResponseHandler.swift in Sources */,
+				0A1849775CF90D514963187D3A771CF8 /* Combine.swift in Sources */,
+				27E59A11A2743B0595CDE3A08675EAE1 /* DispatchQueue+Alamofire.swift in Sources */,
+				6546D728B69398F93B506845141EBD61 /* EventMonitor.swift in Sources */,
+				91B837CE0DCD8EDB300FCDFFA1279162 /* HTTPHeaders.swift in Sources */,
+				013BAC24F7AC722E59517CB110A9E685 /* HTTPMethod.swift in Sources */,
+				45B8CC1C61E7A0BB28CFA8CE7C12FEBC /* MultipartFormData.swift in Sources */,
+				D03F1F02DE8606E6057D57866611BEBF /* MultipartUpload.swift in Sources */,
+				19D605A3233499828FB6B790869F3E9C /* NetworkReachabilityManager.swift in Sources */,
+				8AA937910F87915DE700CAB6C868689E /* Notifications.swift in Sources */,
+				0A900DF17E3B64F08AF673E9A0DDD697 /* OperationQueue+Alamofire.swift in Sources */,
+				4AEC050FA7D5ED52FDA9DF50EA3560DF /* ParameterEncoder.swift in Sources */,
+				D14066FAE94E304798E43651E5886D13 /* ParameterEncoding.swift in Sources */,
+				218C14EAE5AA31C30314AE0289B732A0 /* Protected.swift in Sources */,
+				666EC5C8356E6D4448A2FE7BEE77AD88 /* RedirectHandler.swift in Sources */,
+				EDC93BD7B9262119AE145E4C7A9D0212 /* Request.swift in Sources */,
+				6E54F64E8DA73F4B0B46C216F9F93F63 /* RequestInterceptor.swift in Sources */,
+				6C08F6A77889651626583100F560153D /* RequestTaskMap.swift in Sources */,
+				C1C5B050B55C15103ABC81769551A283 /* Response.swift in Sources */,
+				911448B2EDA2FF880108F77642797A88 /* ResponseSerialization.swift in Sources */,
+				66B26C6CAE737EC21F4BA1F1851B69C5 /* Result+Alamofire.swift in Sources */,
+				9FED70D1E1FBFB80E974E999EF732258 /* RetryPolicy.swift in Sources */,
+				47FDBBBD2704901588C3A7C56BBC502D /* ServerTrustEvaluation.swift in Sources */,
+				6AE407A4FB6C3D6ADD862CC6E3067A17 /* Session.swift in Sources */,
+				381FF05F8B4F611EE9C2FDBE4457BB89 /* SessionDelegate.swift in Sources */,
+				212EDC48B68107BEA9247F3464CE696E /* StringEncoding+Alamofire.swift in Sources */,
+				9B1D8A7798D8A6F518FC9AF9725431D0 /* URLConvertible+URLRequestConvertible.swift in Sources */,
+				D31FC7FDD450C4CDD633ECBAD27C6221 /* URLEncodedFormEncoder.swift in Sources */,
+				D5EAAFB6FAD77A8F0699345149BA3CBB /* URLRequest+Alamofire.swift in Sources */,
+				F70EF854395CDE981A8336E4FF0310FE /* URLSessionConfiguration+Alamofire.swift in Sources */,
+				F0F3224FF592F9BA2A044A2FC2BD4CCD /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85543C5443827ADF9E61185ABB17CD21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,22 +545,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1FD2FFB2BC1725747FAD5657783999D /* Sources */ = {
+		8714F6AC207FF98D560EF2C57385ACEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36F7DFF84AB88A297C3D9D4CB94BEF51 /* Pods-DotaHeroes-dummy.m in Sources */,
+				48D855FEC0D3DACB0A1F148702BA150E /* Pods-DotaHeroes-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A4F41218E4B094BEECC49D30DD3B76EC /* PBXTargetDependency */ = {
+		1C335A57762E202CE8BED44F1CB925C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 163EAA358E2D39C500FFCB9C73C0AF18 /* PBXContainerItemProxy */;
+			targetProxy = 71EEA251B70FCDAD6EF3FAEF9097F705 /* PBXContainerItemProxy */;
+		};
+		5216C601BE76FC8B948BC586BECA4354 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 2FDEF7AD2C13BEA4307438C9E6D78B72 /* PBXContainerItemProxy */;
 		};
 		F9C10B9ED27493F6C8736452F5A3295D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -332,9 +577,83 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		031B56AAA61DBDBFF14AA923ADD277EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF365E544CA4AE4A9C79C05F172DF26 /* Pods-DotaHeroes.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DotaHeroes/Pods-DotaHeroes-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DotaHeroes/Pods-DotaHeroes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		576B85B079792698FCB984320040882A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0939A5A090FC632E244562CFB2D8D2 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5BBACEAB170A43B2A082FE553A93CC8C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F0E5DECCFC7E94D149A9903FFDEB5CA /* Pods-DotaHeroesTests.release.xcconfig */;
+			baseConfigurationReference = 90F11BEB929F99A62D15E26BC553ED1C /* Pods-DotaHeroesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -373,7 +692,7 @@
 		};
 		5BD93BF5C4231190093C88B53519DD20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 979E04583EA9369696E3CB24B96BEE98 /* Pods-DotaHeroesTests.debug.xcconfig */;
+			baseConfigurationReference = 505AF1C3EE0367B7B9D7C7AF8DE00439 /* Pods-DotaHeroesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -411,7 +730,7 @@
 		};
 		84D7C4574E8F0F3095623F0E06F5B402 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			baseConfigurationReference = AC8F95CD7E34152461F42513162DCB1C /* SwiftLint.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -490,47 +809,9 @@
 			};
 			name = Debug;
 		};
-		96AD57494AE6E980CD0EA0D12504B8C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40EBE8A2D74D7082E277381AC430ED43 /* Pods-DotaHeroes.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DotaHeroes/Pods-DotaHeroes-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DotaHeroes/Pods-DotaHeroes.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		DEED47E09AF743F48544C1C4FEADEF47 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89F85ACF3D78B39506B75103B4694B36 /* SwiftLint.xcconfig */;
+			baseConfigurationReference = AC8F95CD7E34152461F42513162DCB1C /* SwiftLint.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -604,9 +885,9 @@
 			};
 			name = Release;
 		};
-		FE6E4F7E55140BCFF94D9AE1EAD0E4A0 /* Release */ = {
+		F8DA86C3AC746EC3BE7884B28D63E646 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8345907C1B0B924C6C27BC2A7AB75F9 /* Pods-DotaHeroes.release.xcconfig */;
+			baseConfigurationReference = FF6CEA4CC8E13A72C930759932FF3815 /* Pods-DotaHeroes.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -643,9 +924,55 @@
 			};
 			name = Release;
 		};
+		F967DC98C228D739DD7CA8D42896EBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0939A5A090FC632E244562CFB2D8D2 /* Alamofire.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F4105687F57E3A59C96AF5366AD1671 /* Build configuration list for PBXNativeTarget "Pods-DotaHeroes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031B56AAA61DBDBFF14AA923ADD277EA /* Debug */,
+				F8DA86C3AC746EC3BE7884B28D63E646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -655,11 +982,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93C780B0CB78C9487EC5699061596834 /* Build configuration list for PBXNativeTarget "Pods-DotaHeroes" */ = {
+		78E219AC01CD5AFED663C9AB28280801 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				96AD57494AE6E980CD0EA0D12504B8C4 /* Debug */,
-				FE6E4F7E55140BCFF94D9AE1EAD0E4A0 /* Release */,
+				576B85B079792698FCB984320040882A /* Debug */,
+				F967DC98C228D739DD7CA8D42896EBC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

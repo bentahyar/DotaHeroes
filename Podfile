@@ -7,6 +7,7 @@ target 'DotaHeroes' do
 
   # Pods for DotaHeroes
   pod 'SwiftLint'
+  pod 'Alamofire'
 
   target 'DotaHeroesTests' do
     inherit! :search_paths
