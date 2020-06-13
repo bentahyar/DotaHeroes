@@ -31,6 +31,13 @@ class MainPresenter: MainEventHandler, MainInteractorOutput {
         interactor.getFilteredHeroes(withRole: role)
     }
 
+    func showHeroDetail(withHero hero: HeroesData) {
+        guard let view = view as? MainViewController else {
+            return
+        }
+        router.pushHeroDetail(fromView: view, withHero: hero)
+    }
+
     // MARK: - Output
     func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData]) {
         view?.showHeroesAndRoles(heroes: heroes, roles: roles)

@@ -63,6 +63,6 @@ extension MainViewController: CollectionAdapterDelegate {
     }
 
     func didSelectHero(withHero hero: HeroesData, indexPath: IndexPath) {
-
+        presenter?.showHeroDetail(withHero: hero)
     }
 }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class MainWireframe: Wireframe {
+class MainWireframe: Wireframe, RouterHeroDetail {
     var viewController: UIViewController {
         let view = MainViewController()
         let interactor = MainInteractor(service: HeroesService(),
