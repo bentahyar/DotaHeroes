@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class MainPresenter: MainEventHandler, MainInteractorOutput {
     let interactor: MainInteractorInput
@@ -32,7 +33,7 @@ class MainPresenter: MainEventHandler, MainInteractorOutput {
     }
 
     func showHeroDetail(withHero hero: HeroesData) {
-        guard let view = view as? MainViewController else {
+        guard let view = view as? UIViewController else {
             return
         }
         router.pushHeroDetail(fromView: view, withHero: hero)

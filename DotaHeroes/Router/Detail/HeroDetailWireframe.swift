@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class HeroDetailWireframe: Wireframe {
+class HeroDetailWireframe: Wireframe, RouterHeroDetail {
     var viewController: UIViewController {
         let view = HeroDetailViewController(hero: hero)
         let interactor = HeroDetailInteractor(databaseManager: databaseManager)

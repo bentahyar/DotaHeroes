@@ -11,4 +11,6 @@ import Foundation
 protocol HeroDetailEventHandler: class {
     func getSimilarHeroes(withHero hero: HeroesData)
     func showSimilarHeroes(heroes: [HeroesData])
+    func showHeroDetail(withHero hero: HeroesData)
+    func popHeroDetailView()
 }

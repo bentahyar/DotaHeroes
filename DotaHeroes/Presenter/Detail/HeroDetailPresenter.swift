@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class HeroDetailPresenter: HeroDetailEventHandler, HeroDetailInteractorOutput {
     let interactor: HeroDetailInteractorInput
@@ -25,6 +26,20 @@ class HeroDetailPresenter: HeroDetailEventHandler, HeroDetailInteractorOutput {
     // MARK: - EventHandler
     func getSimilarHeroes(withHero hero: HeroesData) {
         interactor.getSimilarHeroes(withHero: hero)
+    }
+
+    func showHeroDetail(withHero hero: HeroesData) {
+        guard let view = view as? UIViewController else {
+            return
+        }
+        router.pushHeroDetail(fromView: view, withHero: hero)
+    }
+
+    func popHeroDetailView() {
+        guard let view = view as? UIViewController else {
+            return
+        }
+        view.navigationController?.popViewController(animated: true)
     }
 
     // MARK: - Output
