@@ -21,7 +21,7 @@ public class HeroesService {
         urlRequest.httpMethod = HTTPMethod.get.rawValue
 
         ServiceManager.api.request(withUrl: urlRequest) { (data, error) in
-            if let err = error, err._code == NSURLErrorCancelled {
+            if let err = error, err._code != NSURLErrorCancelled {
                 onError?(err)
                 return
             }

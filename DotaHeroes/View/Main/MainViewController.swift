@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController, MainView {
     @IBOutlet weak var rolesCollectionView: UICollectionView!
     @IBOutlet weak var heroesCollectionView: UICollectionView!
+    @IBOutlet weak var errorView: UIView!
 
     private var heroesAdapter: CollectionAdapter?
     private var rolesAdapter: CollectionAdapter?
@@ -38,6 +39,10 @@ class MainViewController: UIViewController, MainView {
 
     // MARK: - View
     func showHeroesAndRoles(heroes: [HeroesData], roles: [RolesData]) {
+        errorView.isHidden = true
+        heroesCollectionView.isHidden = false
+        rolesCollectionView.isHidden = false
+
         heroesAdapter = CollectionAdapter(collectionView: heroesCollectionView, withData: heroes)
         rolesAdapter = CollectionAdapter(collectionView: rolesCollectionView, withData: roles)
 
@@ -49,11 +54,17 @@ class MainViewController: UIViewController, MainView {
     }
 
     func showError() {
-        debugPrint("Error")
+        heroesCollectionView.isHidden = true
+        rolesCollectionView.isHidden = true
+        errorView.isHidden = false
     }
 
     func showFilteredHeroes(heroes: [HeroesData]) {
         self.heroesAdapter?.update(withData: heroes)
+    }
+
+    @IBAction func tryAgainDidClicked(_ sender: Any) {
+        presenter?.getHeroesAndRoles()
     }
 }
 
