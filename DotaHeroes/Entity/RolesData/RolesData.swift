@@ -17,7 +17,7 @@ class RolesData: NSManagedObject, Entity {
         "RolesData"
     }
 
-    func createOrUpdate(withRole role: String, context: NSManagedObjectContext) throws {
+    static func createOrUpdate(withRole role: String, context: NSManagedObjectContext) throws {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: RolesData.entityName())
         let fetchResult = try context.fetch(request)
         guard let results = fetchResult as? [RolesData],

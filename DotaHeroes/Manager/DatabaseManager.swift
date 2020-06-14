@@ -37,12 +37,10 @@ class DatabaseManager: NSObject {
             let heroes = try decoder.decode([HeroesData].self, from: data)
             try heroes.forEach { hero in
                 try hero.roles.forEach { role in
-                    let roleData = RolesData()
-                    try roleData.createOrUpdate(withRole: role, context: persistentContainer.viewContext)
+                    try RolesData.createOrUpdate(withRole: role, context: persistentContainer.viewContext)
                 }
             }
-            let roleData = RolesData()
-            try roleData.createOrUpdate(withRole: "All", context: persistentContainer.viewContext)
+            try RolesData.createOrUpdate(withRole: "All", context: persistentContainer.viewContext)
             saveContext()
         } catch {
             debugPrint("Error when inserting")

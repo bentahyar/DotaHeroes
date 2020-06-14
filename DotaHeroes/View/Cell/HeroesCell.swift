@@ -12,7 +12,7 @@ class HeroesCell: UICollectionViewCell {
     @IBOutlet weak var imageView: CachedImageView!
     @IBOutlet weak var heroLabel: UILabel!
 
-    var hero: HeroesData = HeroesData() {
+    var hero: HeroesData? {
         didSet {
             didSetHero()
         }
@@ -36,6 +36,9 @@ class HeroesCell: UICollectionViewCell {
     }
 
     private func didSetHero() {
+        guard let hero = hero else {
+            return
+        }
         heroLabel.text = hero.name
         imageView.setCacheImageURL(URL(string: ConstantsManager.imagePrefix + hero.image))
     }
