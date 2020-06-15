@@ -1,0 +1,8 @@
+coverage_service: cobertura_xml
+xcodeproj: DotaHeroes.xcodeproj
+workspace: DotaHeroes
+scheme: DotaHeroes
+output_directory: ./
+ignore:
+  - "Pods"
+  - "DotaHeroesTests"
