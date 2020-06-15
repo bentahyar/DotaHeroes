@@ -18,7 +18,12 @@ class HeroesCell: UICollectionViewCell {
         }
     }
 
-    static func getCellSize() -> CGSize {
+    static func getCellSize(isHeroDetail: Bool = false) -> CGSize {
+        if isHeroDetail {
+            let width = UIScreen.main.bounds.width / 3 - 15
+            let height = width + 20
+            return CGSize(width: width, height: height)
+        }
         let width = UIScreen.main.bounds.width / 2 - 15
         let height = width + 20
         return CGSize(width: width, height: height)

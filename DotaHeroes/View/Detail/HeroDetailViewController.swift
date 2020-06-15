@@ -60,7 +60,8 @@ class HeroDetailViewController: UIViewController, HeroDetailView {
 
     // MARK: - View
     func showSimilarHeroes(heroes: [HeroesData]) {
-        adapter = CollectionAdapter(collectionView: collectionView, withData: heroes)
+        adapter = CollectionAdapter(collectionView: collectionView, withData: heroes,
+                                    isHeroDetail: true)
         adapter?.delegate = self
     }
 

@@ -19,11 +19,13 @@ public class CollectionAdapter: NSObject, UICollectionViewDelegate, UICollection
 UICollectionViewDelegateFlowLayout {
     public unowned let collectionView: UICollectionView
     private(set) var data = [Entity]()
+    private var isHeroDetail: Bool = false
     weak var delegate: CollectionAdapterDelegate?
 
-    init(collectionView: UICollectionView, withData data: [Entity]) {
+    init(collectionView: UICollectionView, withData data: [Entity], isHeroDetail: Bool = false) {
         self.collectionView = collectionView
         self.data = data
+        self.isHeroDetail = isHeroDetail
 
         super.init()
 
@@ -81,7 +83,7 @@ UICollectionViewDelegateFlowLayout {
 
         switch entity {
         case is HeroesData:
-            return HeroesCell.getCellSize()
+            return HeroesCell.getCellSize(isHeroDetail: isHeroDetail)
         case let role as RolesData:
             return RolesCell.getCellSize(withText: role.role)
         default:
