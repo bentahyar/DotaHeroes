@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -197,7 +198,7 @@
                         <constraint firstAttribute="height" constant="22" id="80T-pu-ez1"/>
                         <constraint firstAttribute="width" constant="22" id="OUn-k1-4he"/>
                     </constraints>
-                    <state key="normal" title="Button" image="arrow.left" catalog="system"/>
+                    <state key="normal" title="Button" image="ic_back"/>
                     <connections>
                         <action selector="backButtonDidClicked:" destination="-1" eventType="touchUpInside" id="1jD-ae-iAA"/>
                     </connections>
@@ -233,9 +234,9 @@
         </view>
     </objects>
     <resources>
-        <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="ic_attack" width="170.5" height="170.5"/>
         <image name="ic_attr" width="170.5" height="170.5"/>
+        <image name="ic_back" width="24" height="24"/>
         <image name="ic_health" width="170.5" height="170.5"/>
         <image name="ic_speed" width="170.5" height="170.5"/>
     </resources>
