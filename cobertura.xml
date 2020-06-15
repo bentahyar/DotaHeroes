@@ -1,0 +1,754 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.6214788732394366" branch-rate="1.0000000000000000" lines-covered="353" lines-valid="568" branches-covered="0" branches-valid="0" complexity="0.0" timestamp="1592219262" version="Slather 2.4.9">
+  <sources>
+    <source>/Users/lukasbenedict/Documents/ProjectTiket/DotaHeroes</source>
+  </sources>
+  <packages>
+    <package name="DotaHeroes.Adapter" line-rate="0.7123287671232876" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="CollectionAdapter" filename="DotaHeroes/Adapter/CollectionAdapter.swift" line-rate="0.7123287671232876" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="24" branch="false" hits="2"/>
+            <line number="25" branch="false" hits="2"/>
+            <line number="26" branch="false" hits="2"/>
+            <line number="27" branch="false" hits="2"/>
+            <line number="28" branch="false" hits="2"/>
+            <line number="29" branch="false" hits="2"/>
+            <line number="30" branch="false" hits="2"/>
+            <line number="31" branch="false" hits="2"/>
+            <line number="32" branch="false" hits="2"/>
+            <line number="33" branch="false" hits="2"/>
+            <line number="34" branch="false" hits="2"/>
+            <line number="35" branch="false" hits="2"/>
+            <line number="36" branch="false" hits="2"/>
+            <line number="37" branch="false" hits="2"/>
+            <line number="38" branch="false" hits="2"/>
+            <line number="39" branch="false" hits="2"/>
+            <line number="40" branch="false" hits="2"/>
+            <line number="41" branch="false" hits="2"/>
+            <line number="42" branch="false" hits="2"/>
+            <line number="44" branch="false" hits="0"/>
+            <line number="45" branch="false" hits="0"/>
+            <line number="46" branch="false" hits="0"/>
+            <line number="47" branch="false" hits="0"/>
+            <line number="50" branch="false" hits="14"/>
+            <line number="51" branch="false" hits="14"/>
+            <line number="52" branch="false" hits="14"/>
+            <line number="53" branch="false" hits="14"/>
+            <line number="54" branch="false" hits="14"/>
+            <line number="55" branch="false" hits="8"/>
+            <line number="56" branch="false" hits="8"/>
+            <line number="57" branch="false" hits="0"/>
+            <line number="58" branch="false" hits="8"/>
+            <line number="59" branch="false" hits="8"/>
+            <line number="60" branch="false" hits="8"/>
+            <line number="61" branch="false" hits="14"/>
+            <line number="62" branch="false" hits="6"/>
+            <line number="63" branch="false" hits="6"/>
+            <line number="64" branch="false" hits="0"/>
+            <line number="65" branch="false" hits="6"/>
+            <line number="66" branch="false" hits="6"/>
+            <line number="67" branch="false" hits="6"/>
+            <line number="68" branch="false" hits="14"/>
+            <line number="69" branch="false" hits="0"/>
+            <line number="70" branch="false" hits="14"/>
+            <line number="71" branch="false" hits="14"/>
+            <line number="74" branch="false" hits="2"/>
+            <line number="75" branch="false" hits="2"/>
+            <line number="76" branch="false" hits="2"/>
+            <line number="79" branch="false" hits="129"/>
+            <line number="80" branch="false" hits="129"/>
+            <line number="81" branch="false" hits="129"/>
+            <line number="82" branch="false" hits="129"/>
+            <line number="83" branch="false" hits="129"/>
+            <line number="84" branch="false" hits="119"/>
+            <line number="85" branch="false" hits="129"/>
+            <line number="86" branch="false" hits="10"/>
+            <line number="87" branch="false" hits="129"/>
+            <line number="88" branch="false" hits="0"/>
+            <line number="89" branch="false" hits="129"/>
+            <line number="90" branch="false" hits="129"/>
+            <line number="92" branch="false" hits="0"/>
+            <line number="93" branch="false" hits="0"/>
+            <line number="94" branch="false" hits="0"/>
+            <line number="95" branch="false" hits="0"/>
+            <line number="96" branch="false" hits="0"/>
+            <line number="97" branch="false" hits="0"/>
+            <line number="98" branch="false" hits="0"/>
+            <line number="99" branch="false" hits="0"/>
+            <line number="100" branch="false" hits="0"/>
+            <line number="101" branch="false" hits="0"/>
+            <line number="102" branch="false" hits="0"/>
+            <line number="103" branch="false" hits="0"/>
+            <line number="104" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes" line-rate="0.8333333333333334" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="AppDelegate" filename="DotaHeroes/AppDelegate.swift" line-rate="0.8333333333333334" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="17" branch="false" hits="1"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="1"/>
+            <line number="21" branch="false" hits="0"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="1"/>
+            <line number="28" branch="false" hits="1"/>
+            <line number="29" branch="false" hits="1"/>
+            <line number="30" branch="false" hits="1"/>
+            <line number="31" branch="false" hits="1"/>
+            <line number="32" branch="false" hits="1"/>
+            <line number="33" branch="false" hits="1"/>
+            <line number="34" branch="false" hits="1"/>
+            <line number="35" branch="false" hits="1"/>
+            <line number="36" branch="false" hits="1"/>
+            <line number="37" branch="false" hits="1"/>
+            <line number="38" branch="false" hits="1"/>
+            <line number="39" branch="false" hits="1"/>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="false" hits="0"/>
+            <line number="43" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Entity.HeroesData" line-rate="0.6250000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="HeroesData" filename="DotaHeroes/Entity/HeroesData/HeroesData.swift" line-rate="0.6250000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="42" branch="false" hits="58"/>
+            <line number="43" branch="false" hits="58"/>
+            <line number="44" branch="false" hits="58"/>
+            <line number="47" branch="false" hits="0"/>
+            <line number="48" branch="false" hits="0"/>
+            <line number="49" branch="false" hits="0"/>
+            <line number="50" branch="false" hits="0"/>
+            <line number="51" branch="false" hits="0"/>
+            <line number="52" branch="false" hits="0"/>
+            <line number="53" branch="false" hits="0"/>
+            <line number="54" branch="false" hits="0"/>
+            <line number="55" branch="false" hits="0"/>
+            <line number="56" branch="false" hits="0"/>
+            <line number="57" branch="false" hits="0"/>
+            <line number="58" branch="false" hits="0"/>
+            <line number="59" branch="false" hits="0"/>
+            <line number="62" branch="false" hits="44"/>
+            <line number="63" branch="false" hits="44"/>
+            <line number="64" branch="false" hits="44"/>
+            <line number="65" branch="false" hits="44"/>
+            <line number="66" branch="false" hits="44"/>
+            <line number="67" branch="false" hits="0"/>
+            <line number="68" branch="false" hits="44"/>
+            <line number="69" branch="false" hits="44"/>
+            <line number="70" branch="false" hits="44"/>
+            <line number="71" branch="false" hits="44"/>
+            <line number="72" branch="false" hits="44"/>
+            <line number="73" branch="false" hits="44"/>
+            <line number="74" branch="false" hits="44"/>
+            <line number="75" branch="false" hits="44"/>
+            <line number="76" branch="false" hits="44"/>
+            <line number="77" branch="false" hits="44"/>
+            <line number="78" branch="false" hits="44"/>
+            <line number="79" branch="false" hits="44"/>
+            <line number="80" branch="false" hits="44"/>
+            <line number="81" branch="false" hits="44"/>
+            <line number="82" branch="false" hits="44"/>
+            <line number="83" branch="false" hits="0"/>
+            <line number="84" branch="false" hits="44"/>
+            <line number="85" branch="false" hits="44"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Entity.RolesData" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="RolesData" filename="DotaHeroes/Entity/RolesData/RolesData.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="false" hits="267"/>
+            <line number="17" branch="false" hits="267"/>
+            <line number="18" branch="false" hits="267"/>
+            <line number="20" branch="false" hits="183"/>
+            <line number="21" branch="false" hits="183"/>
+            <line number="22" branch="false" hits="183"/>
+            <line number="23" branch="false" hits="183"/>
+            <line number="24" branch="false" hits="789"/>
+            <line number="25" branch="false" hits="109"/>
+            <line number="26" branch="false" hits="109"/>
+            <line number="27" branch="false" hits="74"/>
+            <line number="28" branch="false" hits="74"/>
+            <line number="29" branch="false" hits="74"/>
+            <line number="30" branch="false" hits="74"/>
+            <line number="31" branch="false" hits="74"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Interactor.Detail" line-rate="0.9062500000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="HeroDetailInteractor" filename="DotaHeroes/Interactor/Detail/HeroDetailInteractor.swift" line-rate="0.9062500000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="false" hits="2"/>
+            <line number="16" branch="false" hits="2"/>
+            <line number="17" branch="false" hits="2"/>
+            <line number="19" branch="false" hits="2"/>
+            <line number="20" branch="false" hits="2"/>
+            <line number="21" branch="false" hits="2"/>
+            <line number="22" branch="false" hits="2"/>
+            <line number="23" branch="false" hits="2"/>
+            <line number="24" branch="false" hits="2"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="2"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="2"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="2"/>
+            <line number="31" branch="false" hits="2"/>
+            <line number="32" branch="false" hits="2"/>
+            <line number="33" branch="false" hits="2"/>
+            <line number="34" branch="false" hits="2"/>
+            <line number="35" branch="false" hits="2"/>
+            <line number="36" branch="false" hits="2"/>
+            <line number="37" branch="false" hits="2"/>
+            <line number="38" branch="false" hits="2"/>
+            <line number="39" branch="false" hits="2"/>
+            <line number="40" branch="false" hits="10"/>
+            <line number="41" branch="false" hits="10"/>
+            <line number="42" branch="false" hits="5"/>
+            <line number="43" branch="false" hits="10"/>
+            <line number="44" branch="false" hits="10"/>
+            <line number="45" branch="false" hits="2"/>
+            <line number="46" branch="false" hits="2"/>
+            <line number="47" branch="false" hits="2"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Interactor.Main" line-rate="0.9761904761904762" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="MainInteractor" filename="DotaHeroes/Interactor/Main/MainInteractor.swift" line-rate="0.9761904761904762" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="false" hits="6"/>
+            <line number="17" branch="false" hits="6"/>
+            <line number="18" branch="false" hits="6"/>
+            <line number="19" branch="false" hits="6"/>
+            <line number="21" branch="false" hits="4"/>
+            <line number="22" branch="false" hits="4"/>
+            <line number="23" branch="false" hits="4"/>
+            <line number="24" branch="false" hits="4"/>
+            <line number="25" branch="false" hits="4"/>
+            <line number="26" branch="false" hits="4"/>
+            <line number="27" branch="false" hits="2"/>
+            <line number="28" branch="false" hits="2"/>
+            <line number="29" branch="false" hits="2"/>
+            <line number="30" branch="false" hits="2"/>
+            <line number="31" branch="false" hits="2"/>
+            <line number="32" branch="false" hits="1"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="34" branch="false" hits="1"/>
+            <line number="35" branch="false" hits="1"/>
+            <line number="36" branch="false" hits="1"/>
+            <line number="37" branch="false" hits="1"/>
+            <line number="38" branch="false" hits="1"/>
+            <line number="39" branch="false" hits="1"/>
+            <line number="40" branch="false" hits="1"/>
+            <line number="41" branch="false" hits="1"/>
+            <line number="42" branch="false" hits="1"/>
+            <line number="43" branch="false" hits="2"/>
+            <line number="44" branch="false" hits="2"/>
+            <line number="45" branch="false" hits="2"/>
+            <line number="47" branch="false" hits="2"/>
+            <line number="48" branch="false" hits="2"/>
+            <line number="49" branch="false" hits="1"/>
+            <line number="50" branch="false" hits="1"/>
+            <line number="51" branch="false" hits="1"/>
+            <line number="52" branch="false" hits="1"/>
+            <line number="53" branch="false" hits="1"/>
+            <line number="54" branch="false" hits="1"/>
+            <line number="55" branch="false" hits="1"/>
+            <line number="56" branch="false" hits="5"/>
+            <line number="57" branch="false" hits="1"/>
+            <line number="58" branch="false" hits="1"/>
+            <line number="59" branch="false" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Manager" line-rate="0.7424242424242424" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="DatabaseManager" filename="DotaHeroes/Manager/DatabaseManager.swift" line-rate="0.9245283018867925" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="false" hits="10"/>
+            <line number="16" branch="false" hits="10"/>
+            <line number="17" branch="false" hits="10"/>
+            <line number="18" branch="false" hits="10"/>
+            <line number="19" branch="false" hits="10"/>
+            <line number="21" branch="false" hits="10"/>
+            <line number="22" branch="false" hits="10"/>
+            <line number="23" branch="false" hits="10"/>
+            <line number="24" branch="false" hits="10"/>
+            <line number="25" branch="false" hits="10"/>
+            <line number="26" branch="false" hits="10"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="10"/>
+            <line number="30" branch="false" hits="10"/>
+            <line number="31" branch="false" hits="10"/>
+            <line number="33" branch="false" hits="8"/>
+            <line number="34" branch="false" hits="8"/>
+            <line number="35" branch="false" hits="8"/>
+            <line number="36" branch="false" hits="8"/>
+            <line number="37" branch="false" hits="8"/>
+            <line number="38" branch="false" hits="44"/>
+            <line number="39" branch="false" hits="175"/>
+            <line number="40" branch="false" hits="175"/>
+            <line number="41" branch="false" hits="175"/>
+            <line number="42" branch="false" hits="44"/>
+            <line number="43" branch="false" hits="8"/>
+            <line number="44" branch="false" hits="8"/>
+            <line number="45" branch="false" hits="8"/>
+            <line number="46" branch="false" hits="0"/>
+            <line number="47" branch="false" hits="8"/>
+            <line number="48" branch="false" hits="8"/>
+            <line number="52" branch="false" hits="22"/>
+            <line number="53" branch="false" hits="22"/>
+            <line number="54" branch="false" hits="22"/>
+            <line number="55" branch="false" hits="22"/>
+            <line number="56" branch="false" hits="22"/>
+            <line number="57" branch="false" hits="22"/>
+            <line number="58" branch="false" hits="22"/>
+            <line number="59" branch="false" hits="22"/>
+            <line number="60" branch="false" hits="22"/>
+            <line number="61" branch="false" hits="22"/>
+            <line number="62" branch="false" hits="233"/>
+            <line number="63" branch="false" hits="233"/>
+            <line number="64" branch="false" hits="233"/>
+            <line number="65" branch="false" hits="233"/>
+            <line number="66" branch="false" hits="233"/>
+            <line number="67" branch="false" hits="22"/>
+            <line number="68" branch="false" hits="0"/>
+            <line number="69" branch="false" hits="22"/>
+            <line number="70" branch="false" hits="22"/>
+            <line number="71" branch="false" hits="22"/>
+            <line number="72" branch="false" hits="22"/>
+          </lines>
+        </class>
+        <class name="ServiceManager" filename="DotaHeroes/Manager/ServiceManager.swift" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="false" hits="0"/>
+            <line number="17" branch="false" hits="0"/>
+            <line number="18" branch="false" hits="0"/>
+            <line number="21" branch="false" hits="0"/>
+            <line number="22" branch="false" hits="0"/>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Presenter.Detail" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="HeroDetailPresenter" filename="DotaHeroes/Presenter/Detail/HeroDetailPresenter.swift" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="20" branch="false" hits="0"/>
+            <line number="21" branch="false" hits="0"/>
+            <line number="22" branch="false" hits="0"/>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="31" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="34" branch="false" hits="0"/>
+            <line number="35" branch="false" hits="0"/>
+            <line number="36" branch="false" hits="0"/>
+            <line number="38" branch="false" hits="0"/>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="false" hits="0"/>
+            <line number="43" branch="false" hits="0"/>
+            <line number="46" branch="false" hits="0"/>
+            <line number="47" branch="false" hits="0"/>
+            <line number="48" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Presenter.Main" line-rate="0.4230769230769231" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="MainPresenter" filename="DotaHeroes/Presenter/Main/MainPresenter.swift" line-rate="0.4230769230769231" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="20" branch="false" hits="1"/>
+            <line number="21" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="27" branch="false" hits="1"/>
+            <line number="28" branch="false" hits="1"/>
+            <line number="29" branch="false" hits="1"/>
+            <line number="31" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="35" branch="false" hits="0"/>
+            <line number="36" branch="false" hits="0"/>
+            <line number="37" branch="false" hits="0"/>
+            <line number="38" branch="false" hits="0"/>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="43" branch="false" hits="1"/>
+            <line number="44" branch="false" hits="1"/>
+            <line number="45" branch="false" hits="1"/>
+            <line number="47" branch="false" hits="0"/>
+            <line number="48" branch="false" hits="0"/>
+            <line number="49" branch="false" hits="0"/>
+            <line number="51" branch="false" hits="0"/>
+            <line number="52" branch="false" hits="0"/>
+            <line number="53" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Router.Detail" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="HeroDetailWireframe" filename="DotaHeroes/Router/Detail/HeroDetailWireframe.swift" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="13" branch="false" hits="0"/>
+            <line number="14" branch="false" hits="0"/>
+            <line number="15" branch="false" hits="0"/>
+            <line number="16" branch="false" hits="0"/>
+            <line number="17" branch="false" hits="0"/>
+            <line number="18" branch="false" hits="0"/>
+            <line number="19" branch="false" hits="0"/>
+            <line number="20" branch="false" hits="0"/>
+            <line number="21" branch="false" hits="0"/>
+            <line number="22" branch="false" hits="0"/>
+            <line number="23" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Router.Main" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="MainWireframe" filename="DotaHeroes/Router/Main/MainWireframe.swift" line-rate="1.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="13" branch="false" hits="1"/>
+            <line number="14" branch="false" hits="1"/>
+            <line number="15" branch="false" hits="1"/>
+            <line number="16" branch="false" hits="1"/>
+            <line number="17" branch="false" hits="1"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="1"/>
+            <line number="21" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="1"/>
+            <line number="26" branch="false" hits="1"/>
+            <line number="27" branch="false" hits="1"/>
+            <line number="28" branch="false" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Router.Protocol" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="RouterHeroDetail" filename="DotaHeroes/Router/Protocol/RouterHeroDetail.swift" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="17" branch="false" hits="0"/>
+            <line number="18" branch="false" hits="0"/>
+            <line number="19" branch="false" hits="0"/>
+            <line number="20" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Router" line-rate="0.8750000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="Wireframe" filename="DotaHeroes/Router/Wireframe.swift" line-rate="0.8750000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="17" branch="false" hits="1"/>
+            <line number="18" branch="false" hits="1"/>
+            <line number="19" branch="false" hits="1"/>
+            <line number="20" branch="false" hits="0"/>
+            <line number="21" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Service" line-rate="0.0500000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="HeroesService" filename="DotaHeroes/Service/HeroesService.swift" line-rate="0.0500000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="13" branch="false" hits="6"/>
+            <line number="15" branch="false" hits="0"/>
+            <line number="16" branch="false" hits="0"/>
+            <line number="17" branch="false" hits="0"/>
+            <line number="18" branch="false" hits="0"/>
+            <line number="19" branch="false" hits="0"/>
+            <line number="20" branch="false" hits="0"/>
+            <line number="21" branch="false" hits="0"/>
+            <line number="22" branch="false" hits="0"/>
+            <line number="23" branch="false" hits="0"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="0"/>
+            <line number="31" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.Utils" line-rate="0.8571428571428571" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="CachedImageView" filename="DotaHeroes/Utils/CachedImageView.swift" line-rate="0.8571428571428571" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="14" branch="false" hits="8"/>
+            <line number="15" branch="false" hits="8"/>
+            <line number="16" branch="false" hits="0"/>
+            <line number="17" branch="false" hits="8"/>
+            <line number="18" branch="false" hits="8"/>
+            <line number="19" branch="false" hits="8"/>
+            <line number="20" branch="false" hits="8"/>
+            <line number="21" branch="false" hits="8"/>
+            <line number="22" branch="false" hits="8"/>
+            <line number="23" branch="false" hits="8"/>
+            <line number="24" branch="false" hits="0"/>
+            <line number="25" branch="false" hits="8"/>
+            <line number="26" branch="false" hits="8"/>
+            <line number="27" branch="false" hits="8"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.View.Cell" line-rate="0.8813559322033898" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="HeaderCell" filename="DotaHeroes/View/Cell/HeaderCell.swift" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="13" branch="false" hits="0"/>
+            <line number="14" branch="false" hits="0"/>
+            <line number="15" branch="false" hits="0"/>
+            <line number="16" branch="false" hits="0"/>
+          </lines>
+        </class>
+        <class name="HeroesCell" filename="DotaHeroes/View/Cell/HeroesCell.swift" line-rate="0.9583333333333334" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="16" branch="false" hits="8"/>
+            <line number="17" branch="false" hits="8"/>
+            <line number="18" branch="false" hits="8"/>
+            <line number="21" branch="false" hits="119"/>
+            <line number="22" branch="false" hits="119"/>
+            <line number="23" branch="false" hits="119"/>
+            <line number="24" branch="false" hits="119"/>
+            <line number="25" branch="false" hits="119"/>
+            <line number="27" branch="false" hits="12"/>
+            <line number="28" branch="false" hits="12"/>
+            <line number="29" branch="false" hits="12"/>
+            <line number="31" branch="false" hits="8"/>
+            <line number="32" branch="false" hits="8"/>
+            <line number="33" branch="false" hits="8"/>
+            <line number="34" branch="false" hits="8"/>
+            <line number="35" branch="false" hits="8"/>
+            <line number="36" branch="false" hits="8"/>
+            <line number="38" branch="false" hits="8"/>
+            <line number="39" branch="false" hits="8"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="41" branch="false" hits="8"/>
+            <line number="42" branch="false" hits="8"/>
+            <line number="43" branch="false" hits="8"/>
+            <line number="44" branch="false" hits="8"/>
+          </lines>
+        </class>
+        <class name="RolesCell" filename="DotaHeroes/View/Cell/RolesCell.swift" line-rate="0.9354838709677419" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="15" branch="false" hits="6"/>
+            <line number="16" branch="false" hits="6"/>
+            <line number="17" branch="false" hits="6"/>
+            <line number="21" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="24" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="1"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="1"/>
+            <line number="29" branch="false" hits="1"/>
+            <line number="32" branch="false" hits="10"/>
+            <line number="33" branch="false" hits="10"/>
+            <line number="34" branch="false" hits="10"/>
+            <line number="35" branch="false" hits="10"/>
+            <line number="36" branch="false" hits="10"/>
+            <line number="38" branch="false" hits="10"/>
+            <line number="39" branch="false" hits="10"/>
+            <line number="40" branch="false" hits="10"/>
+            <line number="42" branch="false" hits="6"/>
+            <line number="43" branch="false" hits="6"/>
+            <line number="44" branch="false" hits="6"/>
+            <line number="45" branch="false" hits="6"/>
+            <line number="46" branch="false" hits="6"/>
+            <line number="47" branch="false" hits="6"/>
+            <line number="48" branch="false" hits="6"/>
+            <line number="49" branch="false" hits="6"/>
+            <line number="51" branch="false" hits="6"/>
+            <line number="52" branch="false" hits="6"/>
+            <line number="53" branch="false" hits="6"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.View.Detail" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="HeroDetailViewController" filename="DotaHeroes/View/Detail/HeroDetailViewController.swift" line-rate="0.0000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="28" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="31" branch="false" hits="0"/>
+            <line number="32" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="0"/>
+            <line number="35" branch="false" hits="0"/>
+            <line number="36" branch="false" hits="0"/>
+            <line number="37" branch="false" hits="0"/>
+            <line number="39" branch="false" hits="0"/>
+            <line number="40" branch="false" hits="0"/>
+            <line number="41" branch="false" hits="0"/>
+            <line number="42" branch="false" hits="0"/>
+            <line number="43" branch="false" hits="0"/>
+            <line number="44" branch="false" hits="0"/>
+            <line number="45" branch="false" hits="0"/>
+            <line number="46" branch="false" hits="0"/>
+            <line number="47" branch="false" hits="0"/>
+            <line number="48" branch="false" hits="0"/>
+            <line number="49" branch="false" hits="0"/>
+            <line number="50" branch="false" hits="0"/>
+            <line number="51" branch="false" hits="0"/>
+            <line number="52" branch="false" hits="0"/>
+            <line number="53" branch="false" hits="0"/>
+            <line number="55" branch="false" hits="0"/>
+            <line number="56" branch="false" hits="0"/>
+            <line number="57" branch="false" hits="0"/>
+            <line number="58" branch="false" hits="0"/>
+            <line number="59" branch="false" hits="0"/>
+            <line number="62" branch="false" hits="0"/>
+            <line number="63" branch="false" hits="0"/>
+            <line number="64" branch="false" hits="0"/>
+            <line number="65" branch="false" hits="0"/>
+            <line number="67" branch="false" hits="0"/>
+            <line number="68" branch="false" hits="0"/>
+            <line number="69" branch="false" hits="0"/>
+            <line number="73" branch="false" hits="0"/>
+            <line number="74" branch="false" hits="0"/>
+            <line number="75" branch="false" hits="0"/>
+            <line number="79" branch="false" hits="0"/>
+            <line number="80" branch="false" hits="0"/>
+            <line number="81" branch="false" hits="0"/>
+            <line number="83" branch="false" hits="0"/>
+            <line number="84" branch="false" hits="0"/>
+            <line number="85" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="DotaHeroes.View.Main" line-rate="0.5000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+      <classes>
+        <class name="MainViewController" filename="DotaHeroes/View/Main/MainViewController.swift" line-rate="0.5000000000000000" branch-rate="1.0000000000000000" complexity="0.0">
+          <methods/>
+          <lines>
+            <line number="21" branch="false" hits="1"/>
+            <line number="22" branch="false" hits="1"/>
+            <line number="23" branch="false" hits="1"/>
+            <line number="25" branch="false" hits="0"/>
+            <line number="26" branch="false" hits="0"/>
+            <line number="27" branch="false" hits="0"/>
+            <line number="29" branch="false" hits="0"/>
+            <line number="30" branch="false" hits="0"/>
+            <line number="31" branch="false" hits="0"/>
+            <line number="33" branch="false" hits="1"/>
+            <line number="34" branch="false" hits="1"/>
+            <line number="35" branch="false" hits="1"/>
+            <line number="36" branch="false" hits="1"/>
+            <line number="37" branch="false" hits="1"/>
+            <line number="38" branch="false" hits="1"/>
+            <line number="41" branch="false" hits="1"/>
+            <line number="42" branch="false" hits="1"/>
+            <line number="43" branch="false" hits="1"/>
+            <line number="44" branch="false" hits="1"/>
+            <line number="45" branch="false" hits="1"/>
+            <line number="46" branch="false" hits="1"/>
+            <line number="47" branch="false" hits="1"/>
+            <line number="48" branch="false" hits="1"/>
+            <line number="49" branch="false" hits="1"/>
+            <line number="50" branch="false" hits="1"/>
+            <line number="51" branch="false" hits="1"/>
+            <line number="52" branch="false" hits="1"/>
+            <line number="53" branch="false" hits="1"/>
+            <line number="54" branch="false" hits="1"/>
+            <line number="56" branch="false" hits="0"/>
+            <line number="57" branch="false" hits="0"/>
+            <line number="58" branch="false" hits="0"/>
+            <line number="59" branch="false" hits="0"/>
+            <line number="60" branch="false" hits="0"/>
+            <line number="62" branch="false" hits="0"/>
+            <line number="63" branch="false" hits="0"/>
+            <line number="64" branch="false" hits="0"/>
+            <line number="66" branch="false" hits="0"/>
+            <line number="67" branch="false" hits="0"/>
+            <line number="68" branch="false" hits="0"/>
+            <line number="72" branch="false" hits="0"/>
+            <line number="73" branch="false" hits="0"/>
+            <line number="74" branch="false" hits="0"/>
+            <line number="76" branch="false" hits="0"/>
+            <line number="77" branch="false" hits="0"/>
+            <line number="78" branch="false" hits="0"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
