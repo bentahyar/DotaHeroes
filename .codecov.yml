@@ -1,0 +1,6 @@
+ignore:
+  - "Pods"
+  - "DotaHeroes/AppDelegate.swift"
+  - "DotaHeroes/View/**/*.xib"
+  - "DotaHeroes/Utils"
+  - "DotaHeroesTests"
