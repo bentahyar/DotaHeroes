@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		79904F12632063F35B7C464A /* Pods_DotaHeroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A7337847739BF1A8D7CD6A /* Pods_DotaHeroes.framework */; };
+		9F0530802497CC5600B72BD6 /* MockMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F05307F2497CC5600B72BD6 /* MockMainView.swift */; };
+		9F0530822497CC6600B72BD6 /* MockMainEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530812497CC6600B72BD6 /* MockMainEventHandler.swift */; };
+		9F0530842497CC6E00B72BD6 /* MockMainInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530832497CC6E00B72BD6 /* MockMainInput.swift */; };
+		9F0530862497CC8600B72BD6 /* MockMainWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530852497CC8600B72BD6 /* MockMainWireframe.swift */; };
+		9F0530882497CC9D00B72BD6 /* MockHeroDetailInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530872497CC9D00B72BD6 /* MockHeroDetailInput.swift */; };
+		9F05308A2497CCAC00B72BD6 /* MockHeroDetailEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530892497CCAC00B72BD6 /* MockHeroDetailEventHandler.swift */; };
+		9F05308C2497CCB800B72BD6 /* MockHeroDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F05308B2497CCB800B72BD6 /* MockHeroDetailView.swift */; };
+		9F05308E2497CCC800B72BD6 /* MockHeroDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F05308D2497CCC800B72BD6 /* MockHeroDetailWireframe.swift */; };
+		9F0530902497CE3C00B72BD6 /* MainViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F05308F2497CE3C00B72BD6 /* MainViewTest.swift */; };
+		9F0530922497CE4B00B72BD6 /* HeroDetailViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530912497CE4B00B72BD6 /* HeroDetailViewTest.swift */; };
+		9F0530942497CE5A00B72BD6 /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530932497CE5A00B72BD6 /* MainPresenterTest.swift */; };
+		9F0530962497CE6800B72BD6 /* HeroDetailPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0530952497CE6800B72BD6 /* HeroDetailPresenterTest.swift */; };
 		9F4A760E24964D2E00EDB6F0 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4A760C24964D2E00EDB6F0 /* HeaderCell.swift */; };
 		9F4A760F24964D2E00EDB6F0 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F4A760D24964D2E00EDB6F0 /* HeaderCell.xib */; };
 		9F628B692494B7EB00590A21 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F628B682494B7EB00590A21 /* Wireframe.swift */; };
@@ -48,6 +60,8 @@
 		9F76AD9724936A9C009C4620 /* MockPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD9624936A9B009C4620 /* MockPersistentContainer.swift */; };
 		9F76AD9924936B21009C4620 /* DatabaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD9824936B21009C4620 /* DatabaseTest.swift */; };
 		9F76AD9F24936D5D009C4620 /* HeroesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76AD9E24936D5D009C4620 /* HeroesData.swift */; };
+		9F93C998249864D700A37577 /* MainWireframeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93C997249864D700A37577 /* MainWireframeTest.swift */; };
+		9F93C99A2498663200A37577 /* HeroDetailWireframeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93C9992498663200A37577 /* HeroDetailWireframeTest.swift */; };
 		9FAAB63F249494E50045BF41 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB63E249494E50045BF41 /* ServiceManager.swift */; };
 		9FAAB6422494999C0045BF41 /* HeroesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB6412494999C0045BF41 /* HeroesService.swift */; };
 		9FAAB64424949AC40045BF41 /* ConstantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAAB64324949AC40045BF41 /* ConstantsManager.swift */; };
@@ -70,6 +84,18 @@
 
 /* Begin PBXFileReference section */
 		9975A6834D77E0AC7BDBAF36 /* Pods-DotaHeroesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DotaHeroesTests.release.xcconfig"; path = "Target Support Files/Pods-DotaHeroesTests/Pods-DotaHeroesTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F05307F2497CC5600B72BD6 /* MockMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainView.swift; sourceTree = "<group>"; };
+		9F0530812497CC6600B72BD6 /* MockMainEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainEventHandler.swift; sourceTree = "<group>"; };
+		9F0530832497CC6E00B72BD6 /* MockMainInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainInput.swift; sourceTree = "<group>"; };
+		9F0530852497CC8600B72BD6 /* MockMainWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMainWireframe.swift; sourceTree = "<group>"; };
+		9F0530872497CC9D00B72BD6 /* MockHeroDetailInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeroDetailInput.swift; sourceTree = "<group>"; };
+		9F0530892497CCAC00B72BD6 /* MockHeroDetailEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeroDetailEventHandler.swift; sourceTree = "<group>"; };
+		9F05308B2497CCB800B72BD6 /* MockHeroDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeroDetailView.swift; sourceTree = "<group>"; };
+		9F05308D2497CCC800B72BD6 /* MockHeroDetailWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHeroDetailWireframe.swift; sourceTree = "<group>"; };
+		9F05308F2497CE3C00B72BD6 /* MainViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTest.swift; sourceTree = "<group>"; };
+		9F0530912497CE4B00B72BD6 /* HeroDetailViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewTest.swift; sourceTree = "<group>"; };
+		9F0530932497CE5A00B72BD6 /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		9F0530952497CE6800B72BD6 /* HeroDetailPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailPresenterTest.swift; sourceTree = "<group>"; };
 		9F4A760C24964D2E00EDB6F0 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 		9F4A760D24964D2E00EDB6F0 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
 		9F628B682494B7EB00590A21 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
@@ -114,6 +140,8 @@
 		9F76AD9624936A9B009C4620 /* MockPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistentContainer.swift; sourceTree = "<group>"; };
 		9F76AD9824936B21009C4620 /* DatabaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTest.swift; sourceTree = "<group>"; };
 		9F76AD9E24936D5D009C4620 /* HeroesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesData.swift; sourceTree = "<group>"; };
+		9F93C997249864D700A37577 /* MainWireframeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWireframeTest.swift; sourceTree = "<group>"; };
+		9F93C9992498663200A37577 /* HeroDetailWireframeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailWireframeTest.swift; sourceTree = "<group>"; };
 		9FAAB63E249494E50045BF41 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		9FAAB6412494999C0045BF41 /* HeroesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesService.swift; sourceTree = "<group>"; };
 		9FAAB64324949AC40045BF41 /* ConstantsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsManager.swift; sourceTree = "<group>"; };
@@ -155,6 +183,57 @@
 				B25BBF52A19A0B89B19A1933 /* Pods_DotaHeroesTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F05307A2497CBD000B72BD6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9F0530932497CE5A00B72BD6 /* MainPresenterTest.swift */,
+				9F0530952497CE6800B72BD6 /* HeroDetailPresenterTest.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9F05307B2497CBDE00B72BD6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9FAAB6512494A5D30045BF41 /* MainInteractorTest.swift */,
+				9F628B982495039500590A21 /* HeroDetailInteractorTest.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9F05307C2497CBE700B72BD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F05308F2497CE3C00B72BD6 /* MainViewTest.swift */,
+				9F0530912497CE4B00B72BD6 /* HeroDetailViewTest.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9F05307D2497CC2B00B72BD6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9FAAB64D2494A5620045BF41 /* MockMainOutput.swift */,
+				9F05307F2497CC5600B72BD6 /* MockMainView.swift */,
+				9F0530812497CC6600B72BD6 /* MockMainEventHandler.swift */,
+				9F0530832497CC6E00B72BD6 /* MockMainInput.swift */,
+				9F0530852497CC8600B72BD6 /* MockMainWireframe.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9F05307E2497CC3600B72BD6 /* HeroDetail */ = {
+			isa = PBXGroup;
+			children = (
+				9F628B942495034400590A21 /* MockHeroDetailOutput.swift */,
+				9F0530872497CC9D00B72BD6 /* MockHeroDetailInput.swift */,
+				9F0530892497CCAC00B72BD6 /* MockHeroDetailEventHandler.swift */,
+				9F05308B2497CCB800B72BD6 /* MockHeroDetailView.swift */,
+				9F05308D2497CCC800B72BD6 /* MockHeroDetailWireframe.swift */,
+			);
+			path = HeroDetail;
 			sourceTree = "<group>";
 		};
 		9F628B6A2494C4D700590A21 /* Adapter */ = {
@@ -311,9 +390,11 @@
 			isa = PBXGroup;
 			children = (
 				9F76AD9424936A65009C4620 /* Mock */,
+				9F05307C2497CBE700B72BD6 /* View */,
+				9F05307B2497CBDE00B72BD6 /* Interactor */,
+				9F05307A2497CBD000B72BD6 /* Presenter */,
+				9F93C99B249866F700A37577 /* Router */,
 				9F76AD9824936B21009C4620 /* DatabaseTest.swift */,
-				9FAAB6512494A5D30045BF41 /* MainInteractorTest.swift */,
-				9F628B982495039500590A21 /* HeroDetailInteractorTest.swift */,
 				9F76AD6624935032009C4620 /* Info.plist */,
 			);
 			path = DotaHeroesTests;
@@ -392,7 +473,8 @@
 		9F76AD9424936A65009C4620 /* Mock */ = {
 			isa = PBXGroup;
 			children = (
-				9FAAB64C2494A5450045BF41 /* Output */,
+				9F05307E2497CC3600B72BD6 /* HeroDetail */,
+				9F05307D2497CC2B00B72BD6 /* Main */,
 				9FAAB64524949D460045BF41 /* Service */,
 				9F76AD9524936A8A009C4620 /* Database */,
 			);
@@ -415,6 +497,15 @@
 			path = HeroesData;
 			sourceTree = "<group>";
 		};
+		9F93C99B249866F700A37577 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9F93C997249864D700A37577 /* MainWireframeTest.swift */,
+				9F93C9992498663200A37577 /* HeroDetailWireframeTest.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		9FAAB640249499850045BF41 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,15 +520,6 @@
 				9FAAB64824949D6D0045BF41 /* MockHeroesService.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		9FAAB64C2494A5450045BF41 /* Output */ = {
-			isa = PBXGroup;
-			children = (
-				9FAAB64D2494A5620045BF41 /* MockMainOutput.swift */,
-				9F628B942495034400590A21 /* MockHeroDetailOutput.swift */,
-			);
-			path = Output;
 			sourceTree = "<group>";
 		};
 		9FD27CD12493BE40005CEB9B /* RolesData */ = {
@@ -691,12 +773,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FAAB64924949D6D0045BF41 /* MockHeroesService.swift in Sources */,
+				9F93C998249864D700A37577 /* MainWireframeTest.swift in Sources */,
 				9F628B952495034400590A21 /* MockHeroDetailOutput.swift in Sources */,
+				9F0530922497CE4B00B72BD6 /* HeroDetailViewTest.swift in Sources */,
+				9F0530822497CC6600B72BD6 /* MockMainEventHandler.swift in Sources */,
+				9F05308C2497CCB800B72BD6 /* MockHeroDetailView.swift in Sources */,
 				9F76AD9724936A9C009C4620 /* MockPersistentContainer.swift in Sources */,
 				9F628B992495039500590A21 /* HeroDetailInteractorTest.swift in Sources */,
+				9F0530942497CE5A00B72BD6 /* MainPresenterTest.swift in Sources */,
+				9F0530962497CE6800B72BD6 /* HeroDetailPresenterTest.swift in Sources */,
 				9F76AD9924936B21009C4620 /* DatabaseTest.swift in Sources */,
 				9FAAB6522494A5D30045BF41 /* MainInteractorTest.swift in Sources */,
+				9F05308E2497CCC800B72BD6 /* MockHeroDetailWireframe.swift in Sources */,
+				9F0530882497CC9D00B72BD6 /* MockHeroDetailInput.swift in Sources */,
+				9F0530842497CC6E00B72BD6 /* MockMainInput.swift in Sources */,
+				9F05308A2497CCAC00B72BD6 /* MockHeroDetailEventHandler.swift in Sources */,
+				9F93C99A2498663200A37577 /* HeroDetailWireframeTest.swift in Sources */,
 				9FAAB64E2494A5620045BF41 /* MockMainOutput.swift in Sources */,
+				9F0530902497CE3C00B72BD6 /* MainViewTest.swift in Sources */,
+				9F0530862497CC8600B72BD6 /* MockMainWireframe.swift in Sources */,
+				9F0530802497CC5600B72BD6 /* MockMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
