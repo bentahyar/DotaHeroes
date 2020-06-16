@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3sv-S4-BFK" customClass="CachedImageView" customModule="DotaHeroes" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="3sv-S4-BFK" customClass="CachedImageView" customModule="DotaHeroes" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="3sv-S4-BFK" secondAttribute="height" multiplier="1:1" id="kRT-oB-gcU"/>
@@ -47,4 +48,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="ic_placeholder" width="83" height="83"/>
+    </resources>
 </document>
